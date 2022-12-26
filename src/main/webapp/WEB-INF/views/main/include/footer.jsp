@@ -15,10 +15,10 @@
 							<a href="">헬싱<sup>+</sup></a>
 						</li>
 						<li>
-							<a href="">온라인 이용권</a>
+							<a href="/itemonline">온라인 이용권</a>
 						</li>
 						<li>
-							<a href="">오프라인 이용권</a>
+							<a href="/itemoffline">오프라인 이용권</a>
 						</li>										
 					</ul>
 				</div>

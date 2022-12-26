@@ -58,7 +58,7 @@
 				<div class="headerNavRight">
 					<ul class="headernavR">
 						<li class="header_nav-ite">
-							<a href="#" class="header_loginBtn">로그인</a>
+							<a href="/login" class="header_loginBtn">로그인</a>
 						</li>
 						<li class="header_nav-ite">
 							<a href="#" class="header_loginBtn">회원가입</a>
