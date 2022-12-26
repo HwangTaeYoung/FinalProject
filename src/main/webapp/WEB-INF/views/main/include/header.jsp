@@ -38,13 +38,17 @@
 				<div class="headerNavLeft">
 					<ul class="headernavL">
 						<li class="header_nav-item">
-							<a href="#">HEALTHING</a>
+							<a href="/">HEALTHING</a>
 						</li>
 						<li class="header_nav-ite">
 							<a href="#">헬싱<sup><i class="xi-plus"></i></sup></a>
 						</li>
 						<li class="header_nav-ite">
 							<a href="#">온&오프이용권<i class="xi-caret-down-min"></i></a>
+							<ul class="headerMenu">
+								<li><a href="/itemonline">온라인 이용권</a></li>
+								<li><a href="/itemoffline">오프라인 이용권</a></li>
+							</ul>
 						</li>
 						<li class="header_nav-ite">
 							<a href="#">고객센터</a>
