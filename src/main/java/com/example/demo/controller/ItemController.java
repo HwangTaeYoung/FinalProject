@@ -13,9 +13,9 @@ public class ItemController {
 	@Resource(name="com.example.demo.service.ItemService")
 	ItemService mitemService;
 	// itemonline
-		@RequestMapping(value="/itemonline")	
-		public String itemonlineController() {
-			
-			return "/main/item/itemonline";
-		}
+	@RequestMapping(value="/itemonline")	
+	public String itemonlineController() {
+		
+		return "/main/item/itemonline";
+	}
 }
