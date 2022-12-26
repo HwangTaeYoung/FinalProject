@@ -31,7 +31,7 @@
 							</span>
 						</p>
 						<div class="indexTopBtn">
-							<a class="cta alt cat" href="#">이용권 더 알아보기</a>
+							<a class="cta alt cat" href="/itemonline">이용권 더 알아보기</a>
 						</div>
 						<div>
 							<a class="cta cat" href="#">
@@ -194,7 +194,7 @@
 									<li>운동 일지 피드백</li>
 								</ul>
 								<img class="mockup mc7" src="/image/seondooimage/up_new_1.png">
-								<a href="#" class="cta">온&오프 이용권 보기</a>
+								<a href="/itemoffline" class="cta">온&오프 이용권 보기</a>
 							</div>
 						</div>
 					</div>

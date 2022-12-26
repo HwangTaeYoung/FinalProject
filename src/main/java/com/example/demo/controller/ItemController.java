@@ -18,4 +18,10 @@ public class ItemController {
 		
 		return "/main/item/itemonline";
 	}
+	// itemoffline
+	@RequestMapping(value="/itemoffline")	
+	public String itemofflineController() {
+		
+		return "/main/item/itemoffline";
+	}
 }
