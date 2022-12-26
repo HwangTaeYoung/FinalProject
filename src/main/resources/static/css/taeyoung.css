@@ -1,5 +1,8 @@
 @charset "UTF-8";
 *{box-sizing:border-box;}
+
+/* login part */
+
 #loginMain{
 	width:1200px;
 	margin:0 auto;
@@ -13,14 +16,19 @@
     margin:150px 0;
 }
 .loginDetailleft{
+	position:relative;
 	width:50%;
-	height:700px;	
-	float:left;
+	height:700px;
 	background-color: #fff;
 	padding:40px 30px;
+	float:left;
 }
-.loginLogo{
-	margin-bottom:120px;	
+.loginInnerbox{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:60%;
+	transform: translate(-50%, -50%);
 }
 .loginLogo img{
 	width:40px;
@@ -29,56 +37,46 @@
 	font-weight:bold;
 	font-size:27px;
     margin-bottom:25px;	
-    padding:0 90px;
 }
-.loginInput input{
-	margin-bottom:10px;
-    margin-right:5px;		
-}
-.loginId{
-    padding:0 90px;
-    margin-bottom:10px;
-}
-.loginPwd{
-    padding:0 90px;
-	margin-bottom:10px;
-}
-.loginCheck{
-    padding:0 90px;
-}
-.loginButton{
-	padding:15px 195px 30px;
-}
-#loginValue{
-	width:370px;
+.loginInput input.loginValue{
+    width:100%;
 	height:40px;
     border-radius:4px;
     padding:15px;
-    border:1px solid #ccc;    
+    border:1px solid #ccc;        
+}
+.loginId{
+    margin-bottom:20px;
+}
+.loginPwd{
+	margin-bottom:20px;
+}
+.loginButton{
+	width:100%;
+	text-align:center;
+	margin: 30px 0 40px;
 }
 .loginCheck{
 	opacity:0.9;
 }
 #loginCheckbox{
-	margin-left:5px;	
+	margin-right:5px;	
 }
-#loginBtn{
+.loginBtn{
 	width:150px;
 	height:40px;
 	padding:5px;	
     margin:20px 0;    
 	border-radius:50px;
+	border:0;
     background: #112233;
     color: #fff;
     font-weight: bold;
 }
-.loginButton #loginBtn:hover{
+.loginBtn:hover{
 	background:#1122E9;
 	color:#fff;
 	opacity:0.8;
-}
-.loginAtag{
-    padding:0 90px;
 }
 .loginAtag a{
 	color:#4285F4;
@@ -91,8 +89,37 @@
 .loginDetailright{
 	width:50%;
 	height:700px;
-	float:right;
     background-image:url(/image/taeyoungimage/running.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+	float:right;
+}
+
+/* loginfind part */
+
+.loginInnerbox.loginfindInnerbox{
+	position:absolute;
+	top:55%;
+	left:50%;
+	width:60%;
+	transform: translate(-50%, -50%);
+}
+.loginfindMent h2{
+	font-weight:bold;
+	font-size:18px;
+    margin-bottom:15px;	
+}
+.loginInnersection .loginButton{
+	margin:10px 0;
+}
+.loginInnersection .loginPwd{
+	margin:0;
+}
+.loginfindDetailright{
+	width:50%;
+	height:700px;
+    background-image:url(/image/taeyoungimage/running2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    float:right;
 }

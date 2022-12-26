@@ -18,4 +18,9 @@ public class UserController {
 
 		return "/main/user/login"; // 이동파일(jsp)을 사용하는 구간
 	}
+	@RequestMapping(value = "/loginfind") // url, 매핑 시킬 페이지 값(form태그 action에 설정된 값)을 설정
+	public String LoginfindController() { // 실제 사용 할 메소드 생성
+
+		return "/main/user/loginfind"; // 이동파일(jsp)을 사용하는 구간
+	}	
 }
