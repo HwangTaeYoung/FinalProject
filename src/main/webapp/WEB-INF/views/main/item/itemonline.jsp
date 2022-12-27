@@ -45,42 +45,87 @@
 					<div class="itemOnTomMip">
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
-								<img class="itemImg" src="/image/seondooimage/s2_event.png">
+								<img class="itemImgs" src="/image/seondooimage/s2_event.png">
 							</div>
 						</div>
+						<!-- for문 시작점 -->
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- for문 끝나는점 -->
+						<div class="itemOnTomMiSu">
+							<div class="itemOnTomDi">
+								<a href="#">
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
+									</div>
+									<div class="itemMym">
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -88,36 +133,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -125,36 +173,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -162,36 +213,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -199,36 +253,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -236,36 +293,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -273,36 +333,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -310,36 +373,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
@@ -347,110 +413,39 @@
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
 								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
+									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+										<div class="itemLocal">온라인 이용권</div>
 									</div>
 									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOnTomMiSu">
-							<div class="itemOnTomDi">
-								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
-									</div>
-									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOnTomMiSu">
-							<div class="itemOnTomDi">
-								<a href="#">
-									<div class="itemMy">
-										<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-										<span class="itemMySub">
-											<span>온라인 이용권</span>
-										</span>
-									</div>
-									<div class="itemMym">
-										<small class="itemCategory">홈 트레이닝, 맨몸운동</small>
-										<small class="itemPeriod">5주 / 주2회 / 15분</small>
-										<strong>태권도 발차기로 키가 쑥쑥!</strong>
-										<span class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<b>김코치</b>
-										</span>
-										<span class="itemPrice">
-											<del>
-												<i>220,000</i>
-												원
-											</del>
-											<b>57% off</b>
-											<strong>
-												<i>95,000</i>원
-											</strong>
-										</span>
-										<span class="itemMeta">
-											<span>
-												남은자리
-												<i>58</i>
-											</span>
-										</span>
+										<div class="itemMymCongal">
+											<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
+											<p class="itemPeriod">5주 / 주2회 / 15분</p>
+											<div>
+												<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											</div>
+										</div>
+										<div class="itemConGal">
+											<div class="itemCo">
+												<img class="itemImg" src="/image/seondooimage/indexlogo.png">
+												<p>김코치</p>
+											</div>
+											<div class="itemPrice">
+												<del>
+													<i>220,000</i>
+													원
+												</del>
+												<b>57% off</b>
+												<strong>
+													<i>95,000</i>원
+												</strong>
+												<div class="itemMeta">
+													<span>
+														남은자리
+														<i>58</i>
+													</span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</a>
 							</div>
