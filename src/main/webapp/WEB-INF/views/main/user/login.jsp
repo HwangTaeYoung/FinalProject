@@ -33,8 +33,7 @@
 					</div>	
 				</form>
 				<div class="loginAtag">
-					<a href="/loginfind">아이디를 잊으셨나요?</a>
-					<a href="/loginfind">비밀번호를 잊으셨나요?</a>
+					<a href="/loginfind">아이디/비밀번호를 잊으셨나요?</a>
 				</div>
 			</div>	
 		</div>

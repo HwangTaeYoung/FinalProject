@@ -22,7 +22,7 @@
 					<div class="loginfindMent">
 						<h2>아이디 찾기</h2>
 					</div>
-					<form class="loginInput" action="" method="POST">
+					<form class="loginInput" action="/pwdfind" method="POST">
 						<div class="loginId">
 							<input type="text" class="loginValue" placeholder="이름을 입력하세요">
 						</div>
@@ -38,7 +38,7 @@
 					<div class="loginfindMent">
 						<h2>비밀번호 찾기</h2>
 					</div>
-					<form class="loginInput" action="" method="POST">
+					<form class="loginInput" action="/pwdfind" method="POST">
 						<div class="loginId">
 							<input type="text" class="loginValue" placeholder="아이디를 입력하세요">
 						</div>
