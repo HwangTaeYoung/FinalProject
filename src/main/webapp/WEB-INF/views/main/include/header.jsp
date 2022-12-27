@@ -44,7 +44,7 @@
 							<a href="#">헬싱<sup><i class="xi-plus"></i></sup></a>
 						</li>
 						<li class="header_nav-ite">
-							<a href="#">온&오프이용권<i class="xi-caret-down-min"></i></a>
+							<a href="javascript:;" class="headerNavonoff">온&오프이용권<i class="xi-caret-down-min"></i></a>
 							<ul class="headerMenu">
 								<li><a href="/itemonline">온라인 이용권</a></li>
 								<li><a href="/itemoffline">오프라인 이용권</a></li>
@@ -65,7 +65,23 @@
 						</li>					
 					</ul>
 				</div>
+				<div class="clearBoth"></div>
 			</div>
 		</div>	
 	</nav>
 </header>
+<script>
+$(document).ready(function() {
+    var jbOffset = $('.headerNav').offset();
+	$(window).scroll(function() {
+		if($(document).scrollTop()>jbOffset.top) {
+			$('.headerNav').addClass('jbFixed');
+		}else {
+			$('.headerNav').removeClass('jbFixed');
+		}
+	});
+});
+$(".headerNavonoff").on("click",function(){
+	$(".headerMenu").toggle();
+})
+</script>
