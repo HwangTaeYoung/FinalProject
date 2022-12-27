@@ -104,11 +104,6 @@
 	width:60%;
 	transform: translate(-50%, -50%);
 }
-.loginfindMent h2{
-	font-weight:bold;
-	font-size:18px;
-    margin-bottom:15px;	
-}
 .loginInnersection .loginButton{
 	margin:10px 0;
 }
@@ -122,4 +117,15 @@
     background-repeat:no-repeat;
     background-size:cover;
     float:right;
+}
+.pwdInnerbox{
+	display:none;
+}
+.pwdDetailright{
+	width:50%;
+	height:700px;
+    background-image:url(/image/taeyoungimage/training.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    float:right;	
 }
