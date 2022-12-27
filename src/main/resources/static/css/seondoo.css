@@ -6,6 +6,10 @@
 	position: relative;
 	z-index: 999;
 }
+.jbFixed{
+	position: fixed !important;
+	top: 0px !important;
+}
 .header .headerUtil{
 	background-color: #112233;
 	padding: 10px 0;
@@ -31,7 +35,7 @@
 	color: #fff;
 }
 .header .headerNav{
-	position: fixed;
+	position: absolute;
 	top: 36px;
 	left: 0;
 	width: 100%;
@@ -49,12 +53,12 @@
 	display: block;
     position: absolute;
     top: 0px;
-    left: -36px;
+    left: -60px;
     border: 0 none;
     background: none;
     outline: none;
     z-index: 10;
-    padding: 0;
+    padding: 0 20px;
 }
 .headerNav .toggle span {
     display: block;
@@ -67,7 +71,6 @@
 }
 .headerNavLi{
 	width: 100%;
-	overflow: hidden;
 }
 .headerNavLeft{
 	float: left;
@@ -75,9 +78,16 @@
 }
 .headernavL{
 	display: flex;
+	align-items: center;
 }
 .headernavL li{
-	margin-right: 50px;
+	padding: 0 20px;
+}
+.headernavL .header_nav-item:first-child{
+	padding-left: 0;
+}
+.headernavL .header_nav-ite:nth-child(3){
+	position: relative;
 }
 .headernavL .header_nav-item a{
 	font-weight: 900;
@@ -93,27 +103,26 @@
 	border-radius: 3px;
 }
 .headerMenu{
-	margin-top: 10px;
-	box-sizing: border-box;
-	background: #fff;
-	display: none; 
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    display: none;
+    box-shadow: 0 0 7px -1px rgb(0 0 0 / 30%);
 }
 .headerMenu li{
-	margin-bottom: 5px;
-	width: 110px;
-	margin-right: 0;
-	padding: 15px 10px;
-}
-.headernavL li:hover .headerMenu{
-	display: block;
+	padding: 15px 0;
+	text-align: center;
 }
 .headerMenu li:first-child{
 	border-bottom: 1px solid #ddd;
 }
 .header_nav-ite a{
-	font-weight: bold;
-	padding: 7px 0;
-	border-radius: 3px;
+	width: 100%;
+	display: inline-block;
 }
 .header_nav-ite a:hover{
     color: #174c88;
@@ -1307,6 +1316,5 @@ footer{
     font-size: 14px;
     list-style: circle;
     margin-left: 20px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;  
 }
