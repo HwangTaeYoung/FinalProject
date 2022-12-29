@@ -1318,3 +1318,468 @@ footer{
     margin-left: 20px;
     margin-bottom: 5px;  
 }
+
+
+
+/*  itemonlineview */
+.itemonlinView{
+	width: 100%;
+}
+.itemOnViewOne{
+	width: 100%;
+}
+.itemOnViewContens{
+	width: 100%;
+	display: flex;
+	padding-top: 70px;
+}
+.itemOnViewMain{
+	flex: 67%;
+	padding-right: 15px;
+}
+.itemOnVTopimg{
+	width: 100%;
+	position: relative;
+	margin-bottom: 60px;
+}
+.itemOnVTopimg img{
+	width: 100%;
+	height: 535px;
+}
+.itemOnVTopimg .itemLocal{
+	background: #3367cd;
+	padding: 9px 12px 5px;
+    font-size: 14px;
+}
+.itemOnViewProgram{
+	width: 100%;
+}
+.itemViewProgram{
+	position: relative;
+	width: 100%;
+}
+.itemViewProgram h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOnViewPcatgory{
+    width: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #123;
+    border: 1px solid #123;
+    padding: 4px 0 3px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.itemOnViewPtitle{
+	font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.itemOnViewPSub{
+	font-size: 16px;
+	font-weight: 700;
+    margin-right: 10px;
+    color: #174c88;
+    margin-bottom: 40px;
+}
+.itemOnViewPInfor{
+	border-left: 1px solid #ddd;
+	margin-bottom: 40px;
+    padding: 10px 30px;
+}
+.itemOnViewCoach{
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.itemOnViewCoach img{
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    border: 2px solid #123;
+}
+.itemOnViewCoInfo{
+	float: left;
+	padding-top: 10px;
+}
+.itemOnViewCo{
+	font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+.itemOnViewCoach p:last-child{
+	font-size: 12px;
+    color: #888;
+}
+.itemOnViewSubTitle{
+	margin-bottom: 25px;
+}
+.itemOnViewSubTitle p{
+	font-size: 24px;
+    color: #111;
+    margin-bottom: 5px;
+}
+.itemOnViewSubinfor{
+	margin-bottom: 25px;
+}
+.itemOnViewSubinfor p{
+	font-size: 18px;
+    color: #111;
+    line-height: 1.3;
+}
+.itemOnViewSubinfor p span{
+    color: #7266d3;
+}
+.itemOnViewProMidle{
+	margin: 50px 0;
+    line-height: 1.7;
+    position: relative;
+    width: 100%;
+}
+.itemOnViewProMidle h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOnViewProMidle h6{
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin: 25px 0 10px;
+}
+.itemOnViewProMidle ul li{
+	list-style: disc;
+    margin-left: 20px;
+}
+.itemOnViewProBottom{
+	position: relative;
+	width: 100%;
+}
+.itemOnViewProBottom h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOnViewProBottom p{
+	font-size: 24px;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+}
+.itemOnViewProBottomimg{
+	position: relative;
+	margin: 35px 0 25px;
+}
+.itemOnViewProBottomKg{
+	position: absolute;
+	bottom: 17px;
+    left: 15px;
+	font-size: 20px;
+	background: #fff;
+	width: 85px;
+	padding: 3px;
+}
+.itemOnViewProfirst{
+	margin-bottom: 50px;
+}
+.itemOnViewProBottom h3{
+	font-size: 24px;
+    font-weight: 400;
+    color: #123;
+}
+.itemOnViewYoga,
+.itemONviewProgInfo{
+	width: 85%;
+}
+.itemOnViewYoga p{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 25px 0 50px;
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+}
+.itemOnViewGoal p{
+	font-size: 24px;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    border: 0;
+}
+.itemOnViewGoal div ul li{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-left: 20px;
+    list-style: disc;
+}
+.itemONviewProg{
+	margin: 50px 0;
+	border-bottom: 1px solid #ddd;
+}
+.itemONviewProg h3{
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #123;
+    margin: 20px 0;
+}
+.itemONviewProgTitle{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.itemONviewProg p{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.itemONviewProg div{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.itemOnviewLastP{
+	margin: 25px 0;
+}
+.itemviewboard{
+	margin: 20px 0 50px;
+}
+.itemviewboard h3{
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #123;
+    margin: 20px 0;
+}
+.itemviewboard p{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+.itemviewboard a{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 7px -1px rgb(0 0 0 / 30%);
+	padding: 20px 25px;
+	display: inline-block;
+}
+.itemviewboard a img{
+	width: 65px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #3367cd;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+.itemviewboard a span{
+	font-weight: 700;
+}
+.itemViewSide{
+	flex: 33%;
+	padding: 0 15px;
+	position: relative;
+	margin-bottom: 35px;
+}
+.itemViewSidebar{
+    position: sticky;
+    top: 90px;
+    left: 0;
+}
+.itemViewSidebox{
+	border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    margin: 0 0 20px;
+    padding: 25px;
+}
+.itemViewSiedPrice b{
+    font-size: 12px;
+    font-weight: 600;
+    color: #123;
+    margin-bottom: 10px;
+    display: block;
+	
+}
+.itemViewPrice{
+	display: inline-block;
+	margin: 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #123;
+}
+.itemViewMarg{
+	margin-bottom: 15px;
+}
+.itemViewSideSale{
+	display: inline-block;
+	color: #e32438;
+    font-weight: 600;
+    font-size: 18px;
+}
+.itemViewremaining{
+	margin-bottom: 20px;
+    background: #f5f3ff;
+    color: #7266d3;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 0 5px;
+    border-radius: 3px;
+    width: 85px;
+    text-align: center;
+}
+.itemViewremaining span{
+	font-weight: 800;
+}
+.itemviewLocal{
+	padding: 8px 0 6px;
+    background: #3367CD;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    width: 110px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.itemViewSiedPrice a{
+	border-radius: 4px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    background: #fff;
+    color: #3367cd;
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid #3367cd;
+    padding: 12px 0;
+    display: inline-block;
+    width: 100%;
+}
+.itemviewPriceText{
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.itemviewPriceText img{
+	width: 50px;
+	margin-right: 10px;
+}
+.itemViewSiedSpec{
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    margin: 0 0 20px;
+    padding: 25px 20px 20px;
+}
+.itemViewSiedSpec p{
+	border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.itemViewSidepic{
+	font-size: 13px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+.itemViewSiedTag{
+    width: 80px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+    display: inline-block;
+}
+.itemViewSiedSpec p:last-child {
+	border: 0;
+}
+.itemViewCoach{
+	display: block;
+    position: relative;
+    padding: 15px 50px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+.itemViewCoach img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #123;
+}
+.itemViewCoach span{
+	color: #174c88;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 0;
+}
+.itemViewCoach b{
+	font-weight: 600;
+    font-size: 15px;
+}
+.itemQnA{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	padding: 100px 0;
+}
+.itemQnATitle{
+	width: 67%;
+}
+.itemQnATitle h4{
+	font-size: 24px;
+    color: #123;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+.itemQnATitle ul{
+	width: 80%;
+}
+.itemQnATitle ul li{
+    padding: 25px 50px 25px 25px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.itemQnATitle ul li b{
+	font-weight: bolder;
+}
+.itemQnATitle ul li i{
+	float: right;
+	font-size: 16px;
+	font-weight: bolder;
+}
+.itemRefund{
+	padding: 50px 0 100px;
+}
+.itemRefund h4{
+	font-size: 24px;
+    color: #123;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.itemRefundsub{
+	line-height: 1.6;
+}
+.itemRefund a{
+	font-weight: 800;
+    text-decoration: underline;
+    color: #333;
+    margin-top: 25px;
+    display: block;
+}
