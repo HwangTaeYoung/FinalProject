@@ -51,7 +51,7 @@
 						<!-- for문 시작점 -->
 						<div class="itemOnTomMiSu">
 							<div class="itemOnTomDi">
-								<a href="#">
+								<a href="/itemonlineview">
 									<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
 										<div class="itemLocal">온라인 이용권</div>
 									</div>

@@ -24,4 +24,10 @@ public class ItemController {
 		
 		return "/main/item/itemoffline";
 	}
+	// itemonlineview
+		@RequestMapping(value="/itemonlineview")	
+		public String itemonlineviewController() {
+			
+			return "/main/item/itemonlineview";
+		}
 }

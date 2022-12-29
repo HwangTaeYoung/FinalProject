@@ -61,7 +61,7 @@
 							<a href="/login" class="header_loginBtn">로그인</a>
 						</li>
 						<li class="header_nav-ite">
-							<a href="#" class="header_loginBtn">회원가입</a>
+							<a href="/memberjoin" class="header_loginBtn">회원가입</a>
 						</li>					
 					</ul>
 				</div>
