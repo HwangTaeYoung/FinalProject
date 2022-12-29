@@ -118,6 +118,9 @@
     background-size:cover;
     float:right;
 }
+
+/* pwdfind part */
+
 .pwdInnerbox{
 	display:none;
 }
@@ -128,4 +131,204 @@
     background-repeat:no-repeat;
     background-size:cover;
     float:right;	
+}
+
+/* memberjoin part */
+
+#memberjoinMain{
+	width:850px;
+	margin:0 auto;
+	background-color:#fff;	
+}
+.memberjoinDetail{
+	width:850px;	
+	overflow:hidden;
+	box-shadow:0 4px 8px rgb(0 0 0 / 10%), 0 6px 16px rgb(0 0 0 / 10%);
+	border-radius:10px;
+    margin:150px 0;
+    padding:40px 30px;	
+}
+.memberjoinMent {
+	margin-top:20px;
+}
+.memberjoinMent h2{
+	margin:0;
+}
+.memberjoinMent h2:last-child{
+	margin-bottom:50px;
+}
+.memberjoinTitle{
+	margin-bottom:20px;
+}
+.memberjoinTitle h3{
+	text-align:center;
+	margin-bottom:20px;
+	font-weight:bold;
+	font-size:25px;
+}
+.memberjoinTitle p{
+	text-align:center;
+	margin-bottom:60px;
+	color: #6D757B;
+	font-weight:bold;
+	font-size:12px;			
+}
+.memberjoinTitle p:last-child{
+	text-align:right;	
+	color:#000000;
+	font-weight:bold;
+	font-size:11px;
+	margin:0;
+}
+.memberjoinTitle p:last-child span{
+    color: #cb0000;	
+}
+.memberjoinTable{
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	margin-bottom:40px;
+	width:100%;
+}
+.memberjoinTable input[type="text"],
+.memberjoinTable input[type="password"]{
+	height:30px;
+	padding:0 10px;
+	border:1px solid #DEDEDE;
+}
+.memberjoinTable input:focus{
+    border-color:#000000;
+    outline: none;
+	transition: 0.8s; 
+}
+.memberjoinTable span{
+    position: relative;
+    display: inline-block;
+    margin: -1px 5px 0 5px;
+    color: #cb0000;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.memberjoinTable button{
+	background-color:#a3a1a1;
+	color:#fff;
+	font-weight:bold;
+	border:none;
+    padding: 8px 15px 6px;
+	margin-left:5px;
+}
+.memberjoinTable tr{
+	border-bottom:1px solid #DEDEDE;
+}
+.memberjoinTable tr th,td{
+	text-align:left;
+	padding : 10px 20px;
+}
+.memberjoinTable th{
+	background-color:#EFEFEF;
+	width:200px;
+}
+.memberjoinTable td{
+	background-color:#fff;
+}
+.memberjoinId input{
+	width:300px;	
+}
+.memberjoinPwd input{
+	width:300px;
+	margin-bottom:10px;			
+}
+.memberjoinPwd p{
+	color:#A3A1A1;
+	font-weight:bold;
+	font-size:11px;
+}
+.memberjoinPwdcheck input{
+	width:300px;	
+}
+.memberjoinName input{
+	width:150px;	
+}
+.memberjoinPhone input{
+	width:250px;	
+}
+.memberjoinPhone p{
+	margin-top:10px;
+	color:#A3A1A1;
+	font-weight:bold;
+	font-size:11px;	
+}
+.memberjoinEmail input{
+	width:150px;
+}
+.memberjoinEmail select{
+	width:120px;
+	height:30px;
+	text-align:center;
+}
+.memberjoinEmail select:focus{
+    outline: none;
+}
+.memberjoinBirth select{
+	padding:5px;
+}
+.memberjoinBirth select:focus{
+    outline: none;
+}
+.memberjoinBirth span{
+	color:#000;
+}
+.memberjoinGender input{
+	margin : 0 5px;
+}
+input[name="gender"] {
+	accent-color: gray;
+}
+.memberjoinheight input{
+	width:50px;			
+}
+.memberjoinweight input{
+	width:50px;
+}
+.memberjoinBtn{
+	text-align:center;
+}
+.memberjoinBtn input{
+	background-color:#000000;
+	color:#fff;
+	font-weight:bold;
+	border:none;
+	padding:10px 15px;	
+	width: 300px;
+}
+.memberjoinZipcode .memberjoinZipnum{
+	width:80px;
+}
+.memberjoinZipcode input[type="button"]{
+	background-color:#a3a1a1;
+	color:#fff;
+	font-weight:bold;
+	border:none;
+    padding: 5px 15px 6px;
+	margin-left:5px;
+}
+.memberjoinAddressone input{
+	width:80%;
+}
+.memberjoinAddresstwo input{
+	width:100%;
+}
+.memberjoinZipcode,
+.memberjoinAddressone,
+.memberjoinAddresstwo{
+	border-bottom:0 !important;
+}
+.memberjoinAddressMent p{
+	color:#A3A1A1;
+	font-weight:bold;
+	font-size:11px;	
+}
+.memberjoinZipcode td,
+.memberjoinAddressone td,
+.memberjoinAddresstwo td{
+	padding-bottom:0;
 }
