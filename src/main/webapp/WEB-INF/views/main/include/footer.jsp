@@ -32,7 +32,7 @@
 							<a href="">Q&A</a>
 						</li>
 						<li>
-							<a href="">헬싱 파트너 신청</a>
+							<a href="/partner">헬싱 파트너 신청</a>
 						</li>										
 					</ul>
 				</div>
