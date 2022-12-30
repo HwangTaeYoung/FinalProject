@@ -17,7 +17,7 @@
 				<div class="header_linkRight">
 					<ul class="header_linkSecond">
 						<li class="header_menuName">
-							<a href="#">
+							<a href="/partner">
 								<i class="xi-users-plus"></i>
 								헬싱 파트너 되기
 							</a>
