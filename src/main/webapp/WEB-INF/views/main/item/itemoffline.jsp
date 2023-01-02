@@ -83,7 +83,7 @@
 						<!-- for문 시작점 -->
 						<div class="itemOffTomMiSu">
 							<div class="itemOffTomDi">
-								<a href="#">
+								<a href="/itemofflineview">
 									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
 										<div class="itemLocal">지역명</div>
 									</div>

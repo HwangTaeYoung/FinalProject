@@ -932,7 +932,7 @@ footer{
     color: #123;
     border: 1px solid #123;
     background: #fff;
-    padding: 4px 6px 3px;
+    padding: 4px 6px;
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -1197,12 +1197,15 @@ footer{
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.itemoffMy .itemLocal{
+	background-color: #008D79;
+}
 .itemLocal{
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
-	padding: 7px 10px 3px;
-	background: #008D79;
+	padding: 6px 10px;
+	background: #3367CD;
 	border-radius: 3px;
 	font-size: 12px;
 	color: #fff;
@@ -1218,7 +1221,7 @@ footer{
     color: #123;
     border: 1px solid #123;
     background: #fff;
-    padding: 4px 6px 3px;
+    padding: 4px 6px;
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -1347,7 +1350,7 @@ footer{
 }
 .itemOnVTopimg .itemLocal{
 	background: #3367cd;
-	padding: 9px 12px 5px;
+	padding: 8px 12px 8px;
     font-size: 14px;
 }
 .itemOnViewProgram{
@@ -1649,7 +1652,7 @@ footer{
 	font-weight: 800;
 }
 .itemviewLocal{
-	padding: 8px 0 6px;
+	padding: 8px 0;
     background: #3367CD;
     border-radius: 3px;
     font-size: 13px;
@@ -1783,6 +1786,269 @@ footer{
     display: block;
 }
 
+/* itemofflineview */
+.itemofflinView{
+	width: 100%;
+}
+.itemofflinView .itemviewLocal{
+	padding: 8px 0;
+    background: #198D79;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    width: 110px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+ .itemofflinView  .itemViewSiedPrice a{
+	border-radius: 4px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    background: #fff;
+    color: #198D79;
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid #198D79;
+    padding: 12px 0;
+    display: inline-block;
+    width: 100%;
+}
+.itemOffViewOne{
+	width: 100%;
+}
+.itemOffViewContens{
+	width: 100%;
+	display: flex;
+	padding-top: 70px;
+}
+.itemOffViewMain{
+	flex: 67%;
+	padding-right: 15px;
+}
+.itemOffVTopimg{
+	width: 100%;
+	position: relative;
+	margin-bottom: 60px;
+}
+.itemOffVTopimg img{
+	width: 100%;
+	height: 535px;
+}
+.itemOffVTopimg .itemLocal{
+	background: #198D79;
+	padding: 8px 12px 8px;
+    font-size: 14px;
+}
+.itemOffViewProgram{
+	width: 100%;
+}
+.itemViewProgram{
+	position: relative;
+	width: 100%;
+}
+.itemViewProgram h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOffViewPcatgory{
+    width: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #123;
+    border: 1px solid #123;
+    padding: 4px 0 3px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.itemOffViewPtitle{
+	font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.itemOffViewPSub{
+	font-size: 16px;
+	font-weight: 700;
+    margin-right: 10px;
+    color: #174c88;
+    margin-bottom: 40px;
+}
+.itemOffViewPInfor{
+	border-left: 1px solid #ddd;
+	margin-bottom: 40px;
+    padding: 10px 30px;
+}
+.itemOffViewCoach{
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.itemOffViewCoach img{
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    border: 2px solid #123;
+}
+.itemOffViewCoInfo{
+	float: left;
+	padding-top: 10px;
+}
+.itemOffViewCo{
+	font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+.itemOffViewCoach p:last-child{
+	font-size: 12px;
+    color: #888;
+}
+.itemOffViewSubTitle{
+	margin-bottom: 25px;
+}
+.itemOffViewSubTitle p{
+	font-size: 24px;
+    color: #111;
+    margin-bottom: 5px;
+}
+.itemOffViewSubinfor{
+	margin-bottom: 25px;
+}
+.itemOffViewSubinfor p{
+	font-size: 18px;
+    color: #111;
+    line-height: 1.3;
+}
+.itemOffViewSubinfor p span{
+    color: #7266d3;
+}
+.itemOffViewProMidle{
+	margin: 50px 0;
+    line-height: 1.7;
+    position: relative;
+    width: 100%;
+}
+.itemOffViewProMidle h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOffViewProMidle h6{
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin: 25px 0 10px;
+}
+.itemOffViewProMidle ul li{
+	list-style: disc;
+    margin-left: 20px;
+}
+.itemOffViewProBottom{
+	position: relative;
+	width: 100%;
+}
+.itemOffViewProBottom h4{
+	position: absolute;
+	top: 0;
+	left: -95px;
+	font-size: 14px;
+    font-weight: 600;
+    color: #888;
+}
+.itemOffViewProBottom p{
+	font-size: 24px;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+}
+.itemOffViewProBottomimg{
+	position: relative;
+	margin: 35px 0 25px;
+}
+.itemOffViewProBottomKg{
+	position: absolute;
+	bottom: 17px;
+    left: 15px;
+	font-size: 20px;
+	background: #fff;
+	width: 85px;
+	padding: 3px;
+}
+.itemOffViewProfirst{
+	margin-bottom: 50px;
+}
+.itemOffViewProBottom h3{
+	font-size: 24px;
+    font-weight: 400;
+    color: #123;
+}
+.itemOffViewYoga,
+.itemOffviewProgInfo{
+	width: 85%;
+}
+.itemOffViewYoga p{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 25px 0 50px;
+    font-weight: 400;
+    border: 0;
+    padding: 0;
+}
+.itemOffViewGoal p{
+	font-size: 24px;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+    border: 0;
+}
+.itemOffViewGoal div ul li{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-left: 20px;
+    list-style: disc;
+}
+.itemOffviewProg{
+	margin: 50px 0;
+	border-bottom: 1px solid #ddd;
+}
+.itemOffviewProg h3{
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #123;
+    margin: 20px 0;
+}
+.itemOffviewProgTitle{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.itemOffviewProg p{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.itemOffviewProg div{
+	color: #123;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.itemOffviewLastP{
+	margin: 25px 0;
+}
+
+
 
 /*  payment */
 .paymentWarp{
@@ -1899,12 +2165,9 @@ footer{
 	cursor: pointer;
 	position: relative;
     z-index: 2;
-    padding: 0.25rem 0.5rem;
-    font-size: .875rem;
+    font-size: 13px;
     line-height: 1.5;
-    border-radius: 0.2rem;
     color: #6c757d;
-    border-color: #6c757d;
     display: inline-block;
     font-weight: 400;
     text-align: center;
