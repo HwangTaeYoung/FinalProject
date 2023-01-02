@@ -25,9 +25,15 @@ public class ItemController {
 		return "/main/item/itemoffline";
 	}
 	// itemonlineview
-		@RequestMapping(value="/itemonlineview")	
-		public String itemonlineviewController() {
-			
-			return "/main/item/itemonlineview";
-		}
+	@RequestMapping(value="/itemonlineview")	
+	public String itemonlineviewController() {
+		
+		return "/main/item/itemonlineview";
+	}
+	// itemofflineview
+	@RequestMapping(value="/itemofflineview")	
+	public String itemofflineviewController() {
+		
+		return "/main/item/itemofflineview";
+	}
 }

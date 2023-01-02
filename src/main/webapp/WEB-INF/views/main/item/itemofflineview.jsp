@@ -4,51 +4,51 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>온라인이용권 상세페이지</title>
+	<title>Insert title here</title>
 	<%@ include file="../include/head.jsp" %>
 </head>
 <body>
 	<!-- header include -->
 	<%@ include file="../include/header.jsp" %>
 	<!-- header include End -->
-	<div class="itemonlinView">
-		<section class="itemOnViewOne">
+	<div class="itemofflinView">
+		<section class="itemOffViewOne">
 			<div class="container">
-				<div class="itemOnViewContens">
-					<div class="itemOnViewMain">
-						<div class="itemOnVTopimg">
+				<div class="itemOffViewContens">
+					<div class="itemOffViewMain">
+						<div class="itemOffVTopimg">
 							<img src="/image/seondooimage/yogamain.jpg">
-							<div class="itemLocal">온라인 이용권</div>
+							<div class="itemLocal">서울</div>
 						</div>
-						<div class="itemOnViewProgram">
-							<div class="itemOnViewProTop itemViewProgram">
+						<div class="itemOffViewProgram">
+							<div class="itemOffViewProTop itemViewProgram">
 								<h4>프로그램 정보</h4>
-								<div class="itemOnViewPcatgory">홈 트레이닝, 요가</div>
-								<div class="itemOnViewPtitle">온 몸이 쭉! 키 커지고 살 빠지는 요가</div>
-								<div class="itemOnViewPSub">5주 / 주2회 / 20분</div>
-								<div class="itemOnViewPInfor">
-									<div class="itemOnViewCoach">
+								<div class="itemOffViewPcatgory">요가</div>
+								<div class="itemOffViewPtitle">온 몸이 쭉! 키 커지고 살 빠지는 요가</div>
+								<div class="itemOffViewPSub">10회 / 2개월 이용권</div>
+								<div class="itemOffViewPInfor">
+									<div class="itemOffViewCoach">
 										<img src="/image/seondooimage/yogamain.jpg">
-										<div class="itemOnViewCoInfo">
-											<p class="itemOnViewCo">김관장</p>
+										<div class="itemOffViewCoInfo">
+											<p class="itemOffViewCo">김관장</p>
 											<p>체계적인 코칭</p>
 										</div>
 									</div>
-									<div class="itemOnViewSummary">
-										<div class="itemOnViewSubTitle">
+									<div class="itemOffViewSummary">
+										<div class="itemOffViewSubTitle">
 											<p><b>초급자</b>분들을 위한</p>
 											<p><b>요가</b> 프로그램입니다.</p>
 											<p><b>체형 교정</b> 을/를 목적으로</p>
 											<p><b>전신</b> 운동을 하시려는 분들에게 적합해요.</p>
 										</div>
-										<div class="itemOnViewSubinfor">
+										<div class="itemOffViewSubinfor">
 											<p><b>김관장</b> 코치는<span> 체계적인 코칭</span>이 장점이에요.</p>
 											<p><span>필수 지표를 관리하면서 차근차근 몸의 변화를 경험</span>할 수 있어요.</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="itemOnViewProMidle itemViewProgram">
+							<div class="itemOffViewProMidle itemViewProgram">
 								<h4>중요 안내</h4>
 								<div>
 									<b>모든 1:1 상담은 헬싱에서 진행됩니다.</b>
@@ -62,19 +62,19 @@
 									<li><b>코칭기간</b>은 설정된 운동 일정 시작일 부터, 운동 일정 종료일 + 1주일입니다.</li>
 								</ul>
 							</div>
-							<div class="itemOnViewProBottom itemViewProgram">
+							<div class="itemOffViewProBottom itemViewProgram">
 								<h4>프로그램 정보</h4>
 								<p>초급</p>
-								<div class="itemOnViewProBottomimg">
+								<div class="itemOffViewProBottomimg">
 									<img src="/image/seondooimage/viman.svg">
 									<div class="itemOnViewProBottomKg">고도비만</div>
 								</div>
-								<h3 class="itemOnViewProfirst">🙋‍♀️🙋🏻‍♂️<b>고도비만</b>이 할 수 있는 프로그램입니다.</h3>
+								<h3 class="itemOffViewProfirst">🙋‍♀️🙋🏻‍♂️<b>고도비만</b>이 할 수 있는 프로그램입니다.</h3>
 								<h3>
 									<span>헬싱이 알려드려요!</span>
 									<span>고도비만은?</span>
 								</h3>
-								<div class="itemOnViewYoga">
+								<div class="itemOffViewYoga">
 									<p>
 										고도비만에 대해서 운동법 json방식으로 적기
 									</p>
@@ -88,7 +88,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="itemViewProgram itemOnViewGoal">
+							<div class="itemViewProgram itemOffViewGoal">
 								<h4>목표</h4>
 								<p>체형 교정</p>
 								<div>
@@ -100,13 +100,13 @@
 									</ul>
 								</div>
 							</div>
-							<div class="itemViewProgram itemONviewProg">
+							<div class="itemViewProgram itemOffviewProg">
 								<h4>프로그렘</h4>
-								<h3 class="itemONviewProgTitle">
+								<h3 class="itemOffviewProgTitle">
 									<span>온몸이 쭉~</span>
 									<span>긴 호흡으로 움직이는 <b>요가</b></span>
 								</h3>
-								<div class="itemONviewProgInfo">
+								<div class="itemOffviewProgInfo">
 									<p>
 										이번 요가 프로그램은 하루에 움직임이 많지 않은 분들을 위해 전신을 골고루 움직여 몸의 순환을 돕는 자세들로 이루어져 있습니다. 
 										빈야사 요가에서 반복되는 기본자세를 익히고, 7가지의 서로 다른 주제를 통해 빈야사 요가의 특징인 깊은 호흡과 함께하는 전신운동을 경험합니다.
@@ -119,7 +119,7 @@
 									<div> - 어깨를 ㄴ 자로 만들어주세요</div>
 									<div>3. 마지막에는 몸 전체의 균형 감각을 키웁니다</div>
 									<div> - 천천히 상체를 듭니다~</div>
-									<p class="itemOnviewLastP">
+									<p class="itemOffviewLastP">
 										어떠세요? 천천히 흘러가는 플로우는 아침에 막 일어났을 때나, 
 										자기 전에 굳은 몸과 스트레스를 풀어주어 기분 좋게 하루를 시작하거나 또 숙면을 취하기에도 아주 좋아요!
 									</p>
@@ -127,7 +127,7 @@
 							</div>
 							<div class="itemviewboard">
 								<h3>
-									<span>온라인이용권에 대해</span>
+									<span>오프라인이용권에 대해</span>
 									<span>무엇이든 물어보세요!</span>
 								</h3>
 								<p>궁금한게 있으신가요? 게시판을 통해 편하게 상담하실 수 있어요.</p>
@@ -154,9 +154,9 @@
 										남은자리 
 										<span> 33</span>
 									</p>
-									<div class="itemviewLocal">온라인 이용권</div>
+									<div class="itemviewLocal">오프라인 이용권</div>
 									<div>
-										<a href="/payment">온라인이용권 결제하기</a>
+										<a href="/payment">오프라인이용권 결제하기</a>
 									</div>
 									<div class="itemviewPriceText">
 										<img src="/image/seondooimage/illust_sona.svg">
@@ -185,6 +185,14 @@
 									<span class="itemViewSiedTag"><i class="xi-fitness-center"></i> 도구</span>
 									<span class="itemViewSidepic"> - </span>
 								</p>
+								<p>
+									<span class="itemViewSiedTag"><i class="xi-call"></i> 연락처</span>
+									<span class="itemViewSidepic"> 010-1111-1234 </span>
+								</p>
+								<p>
+									<span class="itemViewSiedTag"><i class="xi-home"></i> 위치</span>
+									<span class="itemViewSidepic"> 서울시 강남구 강남대로62길 18(역삼동) </span>
+								</p>
 							</div>
 							<a href="#" class="itemViewCoach">
 								<img src="/image/seondooimage/yogamain.jpg">
@@ -203,7 +211,7 @@
 					<ul>
 						<li>
 							<b>Q.</b>
-							온라인이용권 운동 프로그램을 어떻게 구매할 수 있나요?
+							오프라인이용권 운동 프로그램을 어떻게 구매할 수 있나요?
 							<i class="xi-plus"></i>
 						</li>
 						<li>
