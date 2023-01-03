@@ -41,7 +41,7 @@
 							<a href="/">HEALTHING</a>
 						</li>
 						<li class="header_nav-ite">
-							<a href="#">헬싱<sup><i class="xi-plus"></i></sup></a>
+							<a href="/survey">헬싱<sup><i class="xi-plus"></i></sup></a>
 						</li>
 						<li class="header_nav-ite">
 							<a href="javascript:;" class="headerNavonoff">온&오프이용권<i class="xi-caret-down-min"></i></a>
@@ -51,7 +51,13 @@
 							</ul>
 						</li>
 						<li class="header_nav-ite">
-							<a href="#">고객센터</a>
+							<a href="javascript:;" class="headerNavBoard">고객센터<i class="xi-caret-down-min"></i></a>
+							<ul class="headerBoard">
+								<li><a href="">공지사항</a></li>
+								<li><a href="">Q&A</a></li>
+								<li><a href="/boardlist">1:1문의</a></li>
+								<li><a href="">헬싱파트너 신청</a></li>
+							</ul>
 						</li>					
 					</ul>
 				</div>
@@ -83,5 +89,8 @@ $(document).ready(function() {
 });
 $(".headerNavonoff").on("click",function(){
 	$(".headerMenu").toggle();
+})
+$(".headerNavBoard").on("click",function(){
+	$(".headerBoard").toggle();
 })
 </script>
