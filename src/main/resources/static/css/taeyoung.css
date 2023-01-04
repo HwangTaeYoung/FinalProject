@@ -219,7 +219,8 @@
 .memberjoinTable tr{
 	border-bottom:1px solid #DEDEDE;
 }
-.memberjoinTable tr th,td{
+.memberjoinTable tr th,
+.memberjoinTable tr td{
 	text-align:left;
 	padding : 10px 20px;
 }
@@ -561,6 +562,9 @@ input[name="gender"] {
 	position:relative;	
 	z-index:4;
 }
+.surveyDetailFour{
+	margin:0;
+}
 .surveyItemTag{
     width: 52px;
     background: #123;
@@ -740,4 +744,216 @@ mark.puple{
 .surveyMore ul li i{
 	font-size:23px;
 	font-weight:normal;
+}
+
+/* surveywrite part */
+
+.surveyWriteMain{
+	width: 1150px;
+	margin:0 auto;
+}
+.surveyWriteDetail{
+	width: 1150px;
+	margin:150px 0;
+}
+.surveyWriteTitle{
+	margin-bottom:25px;
+}
+.surveyWriteTitle p{
+	font-weight:bold;
+	font-size:20px;
+	line-height: 1.3;
+}
+.surveyWriteTable th{
+	width:265px;
+}
+.surveyWriteTable th,
+.surveyWriteTable td{
+	padding:20px 10px !important;
+}
+.surveyWriteTable input{
+	width:4%;
+}
+.surveyWriteBasic{
+	margin-left:5px;
+}
+.surveyWriteBasic b{
+	padding-right:10px;
+}
+.surveyWriteBasic span{
+	color:#444;
+	vertical-align: bottom;
+	padding-right:20px;		
+}
+.surveyWriteOne input{
+	margin:0;
+}
+.surveyWriteFive input{
+	margin: 0;
+}
+
+/* mypage part */
+
+.mypageFlex{
+	display:flex;
+    flex-wrap: nowrap;	
+}
+.mypageTitle{
+	width:100%;
+	margin-bottom:30px;
+}
+.mypageTitle h3{
+	font-size:27px;
+	font-weight:bold;
+}
+.mypageProfileIcon{
+	width:120px;
+	background:#123;
+	color:#fff;
+	padding:10px;
+	border-radius:5px;
+	text-align:center;
+	margin-bottom:40px;
+}
+.mypageProfileIcon i{
+	font-size:50px;
+}
+.mypageProfileIcon p{
+	font-size:15px;
+}
+.mypageFlexLeft{
+	width: 998px;
+    padding-right: 100px;
+}
+.mypageProfileDetail{
+	margin-bottom:50px;
+}
+.mypageMyProfile{
+	display:inline-block;
+	width:100%;
+	padding:10px;
+	border-radius:3px;
+}
+.mypageMyProfile:hover{
+	background:rgba(0, 0, 0, 0.1);
+}
+.mypageProfileDetail h4{
+	font-size:18px;
+	color:#888;
+	margin-bottom:35px;
+}
+.mypageProfileDetail a{
+	display:block;
+	position:relative;
+	width:100%;
+}
+.mypageProfileDetail span{
+	color:#123;
+	line-height: 1.7;
+	letter-spacing:1px;
+	display:block;
+}
+.mypageName{
+	font-size:23px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.mypageName img{
+	margin-left:5px;
+}
+.mypageFlexRight{
+	width: 382px;
+    margin-left: auto;
+}
+.mypageImage{
+	position:absolute;
+	top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.mypageTable{
+	width:100%;
+}
+.mypageTable tr{
+	border-bottom:1px solid #ddd;
+}
+.mypageTable th{
+	padding-bottom:15px;
+}
+.mypageTable th,
+.mypageTable td{
+	text-align:center;
+	padding:10px 0;
+}
+.mypageTableTitle th:first-child{
+	width:250px;
+}
+.mypageTableTitle th:nth-child(2){
+	width:100px;
+}
+.mypageTableTitle th:nth-child(3){
+	width:150px;
+}
+.mypageTableTitle th:nth-child(4){
+	width:100px;
+}
+.mypageRightBasic{
+	position:relative;
+	margin-bottom:50px;
+}
+.mypageRightBasic h4{
+	font-size:18px;
+	color:#888;
+	margin-bottom:25px;
+}
+.mypageRightBasic a{
+	position:relative;
+	overflow:hidden;
+	display:inline-block;
+	width:100%;
+	padding:22px 0;
+	border-bottom:1px solid #ddd;
+}
+.mypageRightBasic span{
+	display:block;
+}
+.mypageBasicTitle{
+	float:left;
+}
+.mypageRightImg{
+	position:absolute;
+	top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.mypageRightInfo{
+	float:right;
+	padding-right:50px;
+}
+.mypageItem{
+	margin-bottom:50px;
+}
+.mypageItem h4{
+	font-size:18px;
+	color:#888;
+	margin-bottom:25px;
+}
+.mypageHealthing h4{
+	font-size:18px;
+	color:#888;
+	margin-bottom:25px;
+}
+.mypageItem .itemOnTomMiSu{
+	max-width: 100%;
+    padding: 0;
+}
+.mypageProfileDetail .boardEtc{
+	color: #00bcd4;
+	text-align:center;
+}
+.mypageYoga{
+	width:100%;
+}
+.mypageProgram{
+	word-break:keep-all;
 }

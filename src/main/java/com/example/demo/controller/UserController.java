@@ -32,5 +32,10 @@ public class UserController {
 	public String MemberController() { // 실제 사용 할 메소드 생성
 
 		return "/main/user/memberjoin"; // 이동파일(jsp)을 사용하는 구간
-	}		
+	}
+	@RequestMapping(value = "/mypage") // url, 매핑 시킬 페이지 값(form태그 action에 설정된 값)을 설정
+	public String MypageController() { // 실제 사용 할 메소드 생성
+
+		return "/main/user/mypage"; // 이동파일(jsp)을 사용하는 구간
+	}	
 }
