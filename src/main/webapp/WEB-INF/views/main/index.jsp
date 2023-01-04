@@ -34,7 +34,7 @@
 							<a class="cta alt cat" href="/itemonline">이용권 더 알아보기</a>
 						</div>
 						<div>
-							<a class="cta cat" href="#">
+							<a class="cta cat" href="/survey">
 								헬싱
 								<sup>
 									<i class="xi-plus"></i>
@@ -86,7 +86,7 @@
 						</div>
 						<img class="mockup mc1" src="/image/seondooimage/indexsc1.png" data-aos="fade-down" data-aos-delay="400">
 						<img class="mockup mc2" src="/image/seondooimage/indexsc2.png" data-aos="flip-up">
-						<img class="mockup mc3" src="/image/seondooimage/indexsc3.png" data-aos="fade-up-right">
+						<img class="mockup mc3" src="/image/seondooimage/indeximg3.png" data-aos="fade-up-right">
 					</div>
 				</div>
 				<div class="indexRowzip">
@@ -108,7 +108,7 @@
 										</span>
 									</p>
 								</div>
-								<img class="mockup mc4" src="/image/seondooimage/indexsc4.png" data-aos="fade-up-left" data-aos-delay="500">
+								<img class="mockup mc4" src="/image/taeyoungimage/partnersection1.png" data-aos="fade-up-left" data-aos-delay="500">
 							</div>
 							<div class="indexRo_tom" data-aos="fade-up">
 								<h6>오프라인 이용권</h6>
@@ -214,7 +214,7 @@
 									<li>운동 일지 피드백</li>
 								</ul>
 								<img class="mockup mc8" src="/image/seondooimage/up_new_1.png">
-								<a href="#" class="cta">헬싱<sup>+</sup> 더 알아보기</a>
+								<a href="/survey" class="cta">헬싱<sup>+</sup> 더 알아보기</a>
 							</div>
 						</div>
 					</div>

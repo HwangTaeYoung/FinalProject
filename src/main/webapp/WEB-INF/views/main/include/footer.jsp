@@ -12,7 +12,7 @@
 					<h6>healthing</h6>
 					<ul>
 						<li>
-							<a href="">헬싱<sup>+</sup></a>
+							<a href="/survey">헬싱<sup>+</sup></a>
 						</li>
 						<li>
 							<a href="/itemonline">온라인 이용권</a>
@@ -26,20 +26,20 @@
 					<h6>고객센터</h6>
 					<ul>
 						<li>
-							<a href="">공지사항</a>
+							<a href="/boardnotice">공지사항</a>
 						</li>
 						<li>
-							<a href="">Q&A</a>
+							<a href="/boardqna">Q&A</a>
 						</li>
 						<li>
-							<a href="/partner">헬싱 파트너 신청</a>
+							<a href="/boardpartner">헬싱 파트너 신청</a>
 						</li>										
 					</ul>
 				</div>
 				<div class="footer_info footerFl">
 					<h6>INFO</h6>
 					<ul>
-						<li><a href="#">1:1문의</a></li>
+						<li><a href="/boardlist">1:1문의</a></li>
 						<li>평일 09:00 ~ 18:00</li>
 						<li>(점심시간)</li>
 						<li>13:00 ~ 14:00</li>
@@ -57,14 +57,8 @@
 				</ul>  -->
 				<h6>(주)헬싱</h6>
 				<div class="desc">
-					포트폴리오 박선두 황태영
-					<i> | </i>
-					서울시 관악구 남부순환로 1820 에그옐로우빌딩 14층
-					<i> | </i>
-					사업자등록번호 123-45-67890
-					<p>
-					COPYRIGHT (c) 2022. My Health Copyright Association. All rights reserved.
-					</p>
+					포트폴리오 박선두 황태영 참여함.
+					<p>2023.01.01</p>
 				</div>
 			</div>
 		</div>

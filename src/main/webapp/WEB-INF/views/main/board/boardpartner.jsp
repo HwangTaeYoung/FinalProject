@@ -15,7 +15,7 @@
 		<div class="container">
 			<div class="boardListTable">
 				<div class="boardTopTitle">
-					<h1>1:1 문의게시판</h1>
+					<h1>파트너 신청</h1>
 				</div>
 				<table>
 					<tr>
