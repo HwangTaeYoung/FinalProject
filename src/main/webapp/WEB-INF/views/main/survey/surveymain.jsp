@@ -20,7 +20,7 @@
 				<h4>프로그램 구성</h4>
 				<div class="surveyBtn">
 					<div class="surveyDetailOne">
-						<a class="surveyBtnDetail" href="#">
+						<a class="surveyBtnDetail" href="/surveywrite">
 							<span>헬싱</span>
 							<span>플러스</span>
 							<h5>진단 설문하기</h5>
@@ -29,7 +29,7 @@
 						</a>
 					</div>
 					<div class="surveyDetailTwo">
-						<a class="surveyBtnDetail" href="#">
+						<a class="surveyBtnDetail" href="/surveyallview">
 							<span class="surveyItemTag">헬싱<sup>+</sup></span>
 							<img class="surveyItemImg" src="/image/taeyoungimage/ic_select_diet.svg">
 							<strong>다이어트</strong>
@@ -40,7 +40,7 @@
 						</a>
 					</div>
 					<div class="surveyDetailThree">
-						<a class="surveyBtnDetail" href="#">
+						<a class="surveyBtnDetail" href="/surveyallview">
 							<span class="surveyItemTag">헬싱<sup>+</sup></span>
 							<img class="surveyItemImg" src="/image/taeyoungimage/ic_select_biceps.svg">
 							<strong>근력강화</strong>
@@ -53,7 +53,7 @@
 						</a>
 					</div>
 					<div class="surveyDetailFour">
-						<a class="surveyBtnDetail" href="#">
+						<a class="surveyBtnDetail" href="/surveyallview">
 							<span class="surveyItemTag">헬싱<sup>+</sup></span>
 							<img class="surveyItemImg" src="/image/taeyoungimage/ic_select_revision.svg">
 							<strong>체형교정</strong>
