@@ -53,10 +53,10 @@
 						<li class="header_nav-ite">
 							<a href="javascript:;" class="headerNavBoard">고객센터<i class="xi-caret-down-min"></i></a>
 							<ul class="headerBoard">
-								<li><a href="">공지사항</a></li>
-								<li><a href="">Q&A</a></li>
+								<li><a href="/boardpartner">헬싱파트너 신청</a></li>
+								<li><a href="/boardnotice">공지사항</a></li>
 								<li><a href="/boardlist">1:1문의</a></li>
-								<li><a href="">헬싱파트너 신청</a></li>
+								<li><a href="/boardqna">Q&A</a></li>
 							</ul>
 						</li>					
 					</ul>
@@ -89,8 +89,11 @@ $(document).ready(function() {
 });
 $(".headerNavonoff").on("click",function(){
 	$(".headerMenu").toggle();
+	$(".headerBoard").toggle().hide();
+	
 })
 $(".headerNavBoard").on("click",function(){
 	$(".headerBoard").toggle();
+	$(".headerMenu").toggle().hide();
 })
 </script>

@@ -22,7 +22,7 @@
 	            <P>수강생을 코칭하고, 수익을 창출하세요.</P>
 	        </div>
 	        <div class="partnerHeadBtn">
-	            <a href="#">헬싱 파트너 신청하기</a>
+	            <a href="/boardpartner">헬싱 파트너 신청하기</a>
 	        </div>
 	    </div>
 	    <div class="partnerContentsOne">
@@ -139,7 +139,7 @@
 	            <P>헬싱에서 새로운 수익을 창출해보세요!</P>
 	        </div>
 	        <div class="partnerHeadBtn" data-aos="fade-up" data-aos-duration="1500">
-	            <a href="#">헬싱 파트너 신청하기</a>
+	            <a href="/boardpartner">헬싱 파트너 신청하기</a>
 	        </div>
 	    </div>
     </div>    
