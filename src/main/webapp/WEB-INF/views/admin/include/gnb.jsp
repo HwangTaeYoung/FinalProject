@@ -11,10 +11,18 @@
 			</ul>
 		</div>
 		<div class="adminGnbBox">
-			<div class="adminGnbTitle">타이틀</div>
+			<div class="adminGnbTitle">item</div>
 			<ul class="adminGnbMenu">
-				<li><a href="#"><i class="xi-palette"></i>필요한메뉴</a></li>
-				<li><a href="#"><i class="xi-layout-snb-o"></i>필요메뉴</a></li>
+				<li><a href="#"><i class="xi-eraser-o"></i>온라인 이용권</a></li>
+				<li><a href="#"><i class="xi-cart"></i>온라인 신청리스트</a></li>
+				<li><a href="#"><i class="xi-eraser"></i>오프라인 이용권</a></li>
+				<li><a href="#"><i class="xi-cart-o"></i>오프라인 신청리스트</a></li>
+			</ul>
+		</div>
+		<div class="adminGnbBox">
+			<div class="adminGnbTitle">payment</div>
+			<ul class="adminGnbMenu">
+				<li><a href="#"><i class="xi-cc-visa"></i>결제관리</a></li>
 			</ul>
 		</div>
 	</div>
