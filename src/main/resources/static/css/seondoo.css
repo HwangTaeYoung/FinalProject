@@ -2223,6 +2223,12 @@ footer{
     font-weight: 800;
     color: #444;
 }
+.paymentAmount label{
+	margin-right: 10px;
+}
+.paymentAmount label input{
+	margin-right: 5px;
+}
 .paymentPromo{
 	margin-bottom: 40px;
     padding: 20px;
