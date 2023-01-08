@@ -155,6 +155,13 @@
 							</div>
 						</div>			
 					</div>
+					<div class="paymentAmount">
+						<p>결제방식</p>
+						<div>
+							<label><input type="radio" value="신용카드" name="paystaus">신용카드</label>
+							<label><input type="radio" value="무통장입금" name="paystaus">무통장입금</label>
+						</div>
+					</div>
 					<button type="submit">결제하기</button>
 				</div>
 			</div>
