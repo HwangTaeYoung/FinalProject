@@ -23,10 +23,13 @@ public class AdminItemController {
 	// 서비스선언
 	@Resource(name="com.example.demo.service.AdminItemService")
 	AdminItemService mitemservice;
-	
-	String fileurlone = "/Users/parksundo/git/healthing/src/main/resources/static/coachimg/";
-	String fileurltwo = "/Users/parksundo/git/healthing/src/main/resources/static/thumbnail/";
-	
+//  선두용	
+//	String fileurlone = "/Users/parksundo/git/healthing/src/main/resources/static/coachimg/";
+//	String fileurltwo = "/Users/parksundo/git/healthing/src/main/resources/static/thumbnail/";
+//	태영용	
+	String fileurlone = "C:\\Users\\tye19\\git\\healthing\\src\\main\\resources\\static\\coachimg\\";
+	String fileurltwo = "C:\\Users\\tye19\\git\\healthing\\src\\main\\resources\\static\\thumbnail\\";
+
 	// itemonline 온라인이용권관리
 	@RequestMapping(value="/adminitemonline")	
 	public String adminitemonlineController(Model model) throws Exception {
