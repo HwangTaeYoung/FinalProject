@@ -234,6 +234,9 @@
 .memberjoinId input{
 	width:300px;	
 }
+#idChkNotice{
+	margin-left:5px;
+}
 .memberjoinPwd input{
 	width:300px;
 	margin-bottom:10px;			
@@ -245,6 +248,12 @@
 }
 .memberjoinPwdcheck input{
 	width:300px;	
+}
+#chkNotice{
+	margin-left:5px;	
+}
+#phoneChkNotice{
+	margin-left:5px;	
 }
 .memberjoinName input{
 	width:150px;	

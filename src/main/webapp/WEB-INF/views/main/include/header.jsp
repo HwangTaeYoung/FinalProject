@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header class="header">
 	<div class="headerUtil">
 		<div class="container">
@@ -63,12 +64,24 @@
 				</div>
 				<div class="headerNavRight">
 					<ul class="headernavR">
-						<li class="header_nav-ite">
-							<a href="/login" class="header_loginBtn">로그인</a>
-						</li>
-						<li class="header_nav-ite">
-							<a href="/memberjoin" class="header_loginBtn">회원가입</a>
-						</li>					
+						<c:choose>
+							<c:when test="${id!=null}"> 
+								<li class="header_nav-ite">
+									<a href="/mypage" class="header_loginBtn">마이페이지</a>
+								</li>
+								<li class="header_nav-ite">
+									<a href="/logout" class="header_loginBtn">로그아웃</a>
+								</li>
+							</c:when>
+							<c:otherwise>
+								<li class="header_nav-ite">
+									<a href="/login" class="header_loginBtn">로그인</a>
+								</li>
+								<li class="header_nav-ite">
+									<a href="/memberjoin" class="header_loginBtn">회원가입</a>
+								</li>							
+							</c:otherwise>
+						</c:choose>	
 					</ul>
 				</div>
 				<div class="clearBoth"></div>

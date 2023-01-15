@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,9 +24,18 @@
 				<div class="mypageProfileDetail">
 					<h4>프로필</h4>
 					<a href="#" class="mypageMyProfile">
-						<span class="mypageName">홍길동<img src="image/taeyoungimage/ic_gender_male.svg"></span>
-						<span>1990-07-09</span>
-						<span>181cm / 96kg</span>
+						<span class="mypageName">${member.uname}
+						<c:choose>
+							<c:when test="${member.ugender=='man'}">
+								<img src="./image/taeyoungimage/ic_gender_male.svg">
+							</c:when>
+							<c:otherwise>
+								<img src="./image/taeyoungimage/ic_gender_female.svg">
+							</c:otherwise>
+						</c:choose>
+						</span>
+						<span>${member.ubirth}</span>
+						<span>${member.ucm}cm / ${member.ukg}kg</span>
 						<span class="mypageImage"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
 					</a>	
 				</div>
@@ -55,22 +65,22 @@
 					<a href="#">
 						<span class="mypageBasicTitle">성별</span>
 						<span class="mypageRightImg"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-						<span class="mypageRightInfo"><strong>남성</strong></span>
+						<in class="mypageRightInfo"><strong>${member.ugender}</strong></span>
 					</a>
 					<a href="#">
 						<span class="mypageBasicTitle">생년월일</span>
 						<span class="mypageRightImg"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-						<span class="mypageRightInfo"><strong>1990-07-09</strong></span>
+						<span class="mypageRightInfo"><strong>${member.ubirth}</strong></span>
 					</a>
 					<a href="#">	
 						<span class="mypageBasicTitle">키</span>
 						<span class="mypageRightImg"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-						<span class="mypageRightInfo"><strong>181cm</strong></span>
+						<span class="mypageRightInfo"><strong>${member.ucm}cm</strong></span>
 					</a>
 					<a href="#">
 						<span class="mypageBasicTitle">몸무게</span>
 						<span class="mypageRightImg"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-						<span class="mypageRightInfo"><strong>96kg</strong></span>
+						<span class="mypageRightInfo"><strong>${member.ukg}kg</strong></span>
 					</a>
 				</div>
 				<div class="mypageItem">

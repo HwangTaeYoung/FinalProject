@@ -22,12 +22,12 @@
 					<div class="loginfindMent">
 						<h2>아이디 찾기</h2>
 					</div>
-					<form class="loginInput" action="/pwdfind" method="POST">
+					<form class="loginInput" action="/idFind" method="POST">
 						<div class="loginId">
-							<input type="text" class="loginValue" placeholder="이름을 입력하세요">
+							<input type="text" class="loginValue" name="uname" placeholder="이름을 입력하세요">
 						</div>
 						<div class="loginPwd">
-							<input type="email" class="loginValue" placeholder="이메일을 입력하세요">
+							<input type="email" class="loginValue" name="uemail" placeholder="이메일을 입력하세요">
 						</div>
 						<div class="loginButton">
 							<input type="submit" id="loginfindIdbtn" class="loginBtn" value="확인">
@@ -38,12 +38,12 @@
 					<div class="loginfindMent">
 						<h2>비밀번호 찾기</h2>
 					</div>
-					<form class="loginInput" action="/pwdfind" method="POST">
+					<form class="loginInput" action="/pwdFind" method="POST">
 						<div class="loginId">
-							<input type="text" class="loginValue" placeholder="아이디를 입력하세요">
+							<input type="text" class="loginValue" name="uid" placeholder="아이디를 입력하세요">
 						</div>
 						<div class="loginPwd">
-							<input type="email" class="loginValue" placeholder="이메일을 입력하세요">
+							<input type="email" class="loginValue" name="uemail" placeholder="이메일을 입력하세요">
 						</div>
 						<div class="loginButton">
 							<input type="submit" id="loginfindPwbtn" class="loginBtn" value="확인">
