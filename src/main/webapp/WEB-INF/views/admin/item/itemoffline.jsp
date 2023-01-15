@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,111 +56,23 @@
 							<th>모집상태</th>
 							<th>관리</th>
 						</tr>
-						<tr onclick="location.href=''">
-							<td>1</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
+						<c:forEach var="list" items="${list}" varStatus="status" >
+						<tr onclick="location.href='/adminitemofflineview/${list.ino}'">
+							<td>${status.count}</td>
+							<td>${list.icategory}</td>
+							<td>${list.icoachname}</td>
+							<td>${list.ititle}</td>
+							<td>${list.ilocal}</td>
+							<td><fmt:formatDate value="${list.insertdate}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+							<td>${list.ipeople}</td>
 							<td class="adminitemCat">
 								<span class="adminitemEtc">모집중</span>
 							</td>
 							<td>
-								<input type="button" value="수정" class="adminitemreset">
+								<input type="button" value="수정" class="adminitemreset" onclick="location.href='/adminitemofflineupdate/${list.ino}'">
 							</td>
 						</tr>
-						<tr>
-							<td>2</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span class="adminitemEtc">모집중</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span class="adminitemEtc">모집중</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span class="adminitemPurple">모집완료</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span>기타</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span>기타</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>요가</td>
-							<td>김관장</td>
-							<td>온 몸이 쭉! 키 커지고 살 빠지는 요가</td>
-							<td>서울</td>
-							<td>2023.01.01</td>
-							<td>3/100</td>
-							<td class="adminitemCat">
-								<span>기타</span>
-							</td>
-							<td>
-								<input type="button" value="수정" class="adminitemreset">
-							</td>
-						</tr>
+						</c:forEach>
 					</table>
 				</div>
 				<div class="adminitemPage">
