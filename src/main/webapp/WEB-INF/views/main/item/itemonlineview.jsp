@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,38 +19,38 @@
 				<div class="itemOnViewContens">
 					<div class="itemOnViewMain">
 						<div class="itemOnVTopimg">
-							<img src="/image/seondooimage/yogamain.jpg">
+							<img src="${view.ithumbnail}">
+							<input type="hidden" value="${view.ino}" name="ino">
 							<div class="itemLocal">온라인 이용권</div>
 						</div>
 						<div class="itemOnViewProgram">
 							<div class="itemOnViewProTop itemViewProgram">
 								<h4>프로그램 정보</h4>
-								<div class="itemOnViewPcatgory">홈 트레이닝, 요가</div>
-								<div class="itemOnViewPtitle">온 몸이 쭉! 키 커지고 살 빠지는 요가</div>
-								<div class="itemOnViewPSub">5주 / 주2회 / 20분</div>
+								<div class="itemOnViewPcatgory">${view.icategory}</div>
+								<div class="itemOnViewPtitle">${view.ititle}</div>
+								<div class="itemOnViewPSub">${view.iweek}주 / 주${view.iweekcount}회 / ${view.iweektime}분</div>
 								<div class="itemOnViewPInfor">
 									<div class="itemOnViewCoach">
-										<img src="/image/seondooimage/yogamain.jpg">
+										<img src="${view.icoachimg}">
 										<div class="itemOnViewCoInfo">
-											<p class="itemOnViewCo">김관장</p>
-											<p>체계적인 코칭</p>
+											<p class="itemOnViewCo">${view.icoachname}</p>
+											<p>${view.icoachinfo}</p>
 										</div>
 									</div>
-									<div class="itemOnViewSummary">
-										<div class="itemOnViewSubTitle">
-											<p><b>초급자</b>분들을 위한</p>
-											<p><b>요가</b> 프로그램입니다.</p>
-											<p><b>체형 교정</b> 을/를 목적으로</p>
-											<p><b>전신</b> 운동을 하시려는 분들에게 적합해요.</p>
+									<div class="itemOffViewSummary">
+										<div class="itemOffViewSubTitle">
+											<p><b>${view.ilavel}자</b>분들을 위한</p>
+											<p><b>${view.icategory}</b> 프로그램입니다.</p>
+											<p><b>${view.itarget}</b> 을/를 목적으로</p>
 										</div>
-										<div class="itemOnViewSubinfor">
-											<p><b>김관장</b> 코치는<span> 체계적인 코칭</span>이 장점이에요.</p>
-											<p><span>필수 지표를 관리하면서 차근차근 몸의 변화를 경험</span>할 수 있어요.</p>
+										<div class="itemOffViewSubinfor">
+											<p><b>${view.icoachname}</b> 코치는<span> ${view.icoachinfo}</span>이 장점이에요.</p>
+											<p><span>${view.icoachsummary}</span> 할 수 있어요.</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="itemOnViewProMidle itemViewProgram">
+							<div class="itemOffViewProMidle itemViewProgram">
 								<h4>중요 안내</h4>
 								<div>
 									<b>모든 1:1 상담은 헬싱에서 진행됩니다.</b>
@@ -62,68 +64,41 @@
 									<li><b>코칭기간</b>은 설정된 운동 일정 시작일 부터, 운동 일정 종료일 + 1주일입니다.</li>
 								</ul>
 							</div>
-							<div class="itemOnViewProBottom itemViewProgram">
+							<div class="itemOffViewProBottom itemViewProgram">
 								<h4>프로그램 정보</h4>
-								<p>초급</p>
-								<div class="itemOnViewProBottomimg">
+								<p>${view.ilavel}</p>
+								<div class="itemOffViewProBottomimg">
 									<img src="/image/seondooimage/viman.svg">
-									<div class="itemOnViewProBottomKg">고도비만</div>
+									<div class="itemOnViewProBottomKg">${view.itarget}</div>
 								</div>
-								<h3 class="itemOnViewProfirst">🙋‍♀️🙋🏻‍♂️<b>고도비만</b>이 할 수 있는 프로그램입니다.</h3>
-								<h3>
+								<h3 class="itemOffViewProfirst">🙋‍♀️🙋🏻‍♂️<b>${view.itarget}</b>을 위한 프로그램입니다.</h3>
+								<h3 class="itemOffViewPr3">
 									<span>헬싱이 알려드려요!</span>
-									<span>고도비만은?</span>
+									<span>${view.itarget}?</span>
 								</h3>
-								<div class="itemOnViewYoga">
-									<p>
-										고도비만에 대해서 운동법 json방식으로 적기
-									</p>
-									<h3>
+								<div class="itemOffViewYoga">
+									<span>
+										${view.itarget}에 대해서 운동법 json방식으로 적기
+									</span>
+									<h3 class="itemOffViewPr3">
 										<span>고도비만을 위한</span>
 										<span>추천 식단!</span>
 									</h3>
-									<p>
-										고도비만에 대해서 좋은 식단 json방식으로 적기
+									<span>
+										${view.itarget}에 대해서 좋은 식단 json방식으로 적기
 										<b>앞에 아이콘 뒤에 식단명</b>
-									</p>
+									</span>
 								</div>
 							</div>
-							<div class="itemViewProgram itemOnViewGoal">
+							<div class="itemViewProgram itemOffViewGoal">
 								<h4>목표</h4>
-								<p>체형 교정</p>
-								<div>
-									<ul>
-										<li>굳어있던 몸을 풀어내어 온 몸의 순환을 돕습니다</li>
-										<li>천천히 긴 호흡으로 몸을 부드럽게 움직이며 열을 내 몸 속의 노폐물을 배출합니다</li>
-										<li>다양한 빈야사 시퀀스를 통해 체지방, 붓기를 빼내며 한층 가벼워짐을 느낍니다</li>
-										<li>요가를 통해 운동하는 습관을 기르고 내 몸이 건강해짐을 깨달아갑니다</li>
-									</ul>
-								</div>
+								<p class="itemOffViewGoalP">${view.ipurpose}</p>
+								<div>${view.igoal}</div>
 							</div>
-							<div class="itemViewProgram itemONviewProg">
-								<h4>프로그렘</h4>
-								<h3 class="itemONviewProgTitle">
-									<span>온몸이 쭉~</span>
-									<span>긴 호흡으로 움직이는 <b>요가</b></span>
-								</h3>
-								<div class="itemONviewProgInfo">
-									<p>
-										이번 요가 프로그램은 하루에 움직임이 많지 않은 분들을 위해 전신을 골고루 움직여 몸의 순환을 돕는 자세들로 이루어져 있습니다. 
-										빈야사 요가에서 반복되는 기본자세를 익히고, 7가지의 서로 다른 주제를 통해 빈야사 요가의 특징인 깊은 호흡과 함께하는 전신운동을 경험합니다.
-									</p>
-									<div>1. 전신을 늘려주고 천천히 호흡합니다</div>
-									<div> - 허리와 뒷 다리를 쭉쭉 늘려주세요</div>
-									<div> - 오른팔을 하늘을 향해서 길~게 뻗어주세요</div>
-									<div>2. 상체와 하체 구석구석 순환도 놓치지 않습니다</div>
-									<div> - 하체에 힘을 주고 위로 쭉 뻗습니다!</div>
-									<div> - 어깨를 ㄴ 자로 만들어주세요</div>
-									<div>3. 마지막에는 몸 전체의 균형 감각을 키웁니다</div>
-									<div> - 천천히 상체를 듭니다~</div>
-									<p class="itemOnviewLastP">
-										어떠세요? 천천히 흘러가는 플로우는 아침에 막 일어났을 때나, 
-										자기 전에 굳은 몸과 스트레스를 풀어주어 기분 좋게 하루를 시작하거나 또 숙면을 취하기에도 아주 좋아요!
-									</p>
-								</div>
+							<div class="itemViewProgram itemOffviewProg">
+								<h4>프로그램</h4>
+								<h3 class="itemOffviewProgTitle">${view.ititle}</h3>
+								<div class="itemOffviewProgInfo">${view.icontents}</div>
 							</div>
 							<div class="itemviewboard">
 								<h3>
@@ -131,7 +106,7 @@
 									<span>무엇이든 물어보세요!</span>
 								</h3>
 								<p>궁금한게 있으신가요? 게시판을 통해 편하게 상담하실 수 있어요.</p>
-								<a href="#">
+								<a href="/boardlist">
 									<img src="/image/seondooimage/illust_sona.svg">
 									<span>게시판 바로가기</span>
 								</a>
@@ -144,15 +119,16 @@
 								<div class="itemViewSiedPrice">
 									<b>할인가</b>
 									<div class="itemViewMarg">
-										<p class="itemViewSideSale">62%</p>
+										<p class="itemViewSideSale">${view.isale}%</p>
 										<div class="itemViewPrice">
-											<span>95,000</span>원
+											<c:set var="price" value="${view.iprice-((view.isale/100)*view.iprice)}"/>
+											<span><fmt:formatNumber type="number" value="${price+(1-(price%1))%1}"/></span>원
 										</div>
-										<del>250,000</del>
+										<del><fmt:formatNumber type="number" value="${view.iprice}"/>원</del>
 									</div>
 									<p class="itemViewremaining">
 										남은자리 
-										<span> 33</span>
+										<span>${view.ipeople}</span>
 									</p>
 									<div class="itemviewLocal">온라인 이용권</div>
 									<div>
@@ -167,29 +143,29 @@
 							<div class="itemViewSiedSpec">
 								<p>
 									<span class="itemViewSiedTag"><i class="xi-box"></i> 유형</span>
-									<span class="itemViewSidepic">요가</span>
+									<span class="itemViewSidepic">${view.icategory}</span>
 								</p>
 								<p>
 									<span class="itemViewSiedTag"><i class="xi-my-location"></i> 목적</span>
-									<span class="itemViewSidepic">체형교정</span>
+									<span class="itemViewSidepic">${view.ipurpose}</span>
 								</p>
 								<p>
-									<span class="itemViewSiedTag"><i class="xi-focus-center"></i> 타켓</span>
-									<span class="itemViewSidepic">고도비만</span>
+									<span class="itemViewSiedTag"><i class="xi-focus-center"></i> 타겟</span>
+									<span class="itemViewSidepic">${view.itarget}</span>
 								</p>
 								<p>
 									<span class="itemViewSiedTag"><i class="xi-sort-desc"></i> 난이도</span>
-									<span class="itemViewSidepic">초급</span>
+									<span class="itemViewSidepic">${view.ilavel}</span>
 								</p>
 								<p>
 									<span class="itemViewSiedTag"><i class="xi-fitness-center"></i> 도구</span>
-									<span class="itemViewSidepic"> - </span>
+									<span class="itemViewSidepic">${view.itool}</span>
 								</p>
 							</div>
 							<a href="#" class="itemViewCoach">
-								<img src="/image/seondooimage/yogamain.jpg">
+								<img src="${view.icoachimg}">
 								<span>헬싱 코치</span>
-								<b>김관장</b>
+								<b>${view.icoachname}</b>
 							</a>
 						</div>
 					</div>

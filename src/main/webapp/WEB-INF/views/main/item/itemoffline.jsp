@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,36 +83,41 @@
 				<div class="itemOffTomMi">
 					<div class="itemOffTomMip">
 						<!-- for문 시작점 -->
+						<c:forEach var="list" items="${list}" varStatus="status" >
 						<div class="itemOffTomMiSu">
 							<div class="itemOffTomDi">
-								<a href="/itemofflineview">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
+								<a href="/itemofflineview/${list.ino}">
+									<div class="itemoffMy" style="background-image: url('${list.ithumbnail}')">
+										<div class="itemLocal">${list.ilocal}</div>
 									</div>
 									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
+										<p class="itemoffCategory">${list.icategory}</p>
+										<p class="itemPeriod">${list.iweekcount}회 / ${list.iweek}개월</p>
+										<p class="itemoffPeriod">${list.iaddr}</p>
+										<div class="itemoffStr">
+											<strong>${list.ititle}</strong>
 										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
 										<div class="itemoffSelt">
 											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
+												<img class="itemoffImg" src="${list.icoachimg}">
+												<p>${list.icoachname}</p>
 											</div>
 											<div class="itemoffPrice">
 												<del>
-													<i>220,000</i>
+													<i><fmt:formatNumber type="number" value="${list.iprice}"/></i>
 													원
 												</del>
-												<b>57% off</b>
+												<b>${list.isale}% off</b>
 												<strong>
-													<i>95,000</i>원
+													<i>
+														<c:set var="price" value="${list.iprice-((list.isale/100)*list.iprice)}"/>
+														<fmt:formatNumber type="number" value="${price+(1-(price%1))%1}"/>
+													</i>원
 												</strong>
 												<div class="itemoffMeta">
 													<span>
 														남은자리
-														<i>58</i>
+														<i>${list.ipeople}</i>
 													</span>
 												</div>
 											</div>
@@ -119,349 +126,8 @@
 								</a>
 							</div>
 						</div>
+						</c:forEach>
 						<!-- for문 끝나는점 -->
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="itemOffTomMiSu">
-							<div class="itemOffTomDi">
-								<a href="#">
-									<div class="itemoffMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
-										<div class="itemLocal">지역명</div>
-									</div>
-									<div class="itemoffMym">
-										<p class="itemoffCategory">이용권 판매중</p>
-										<div>
-											<strong>운동명가 조아짐</strong>
-										</div>
-										<p class="itemoffPeriod"> 대구시 달서구 월곡로 260, 상인프라자 8층</p>
-										<div class="itemoffSelt">
-											<div class="itemoffCo">
-												<img class="itemoffImg" src="/image/seondooimage/indexlogo.png">
-												<p>김코치</p>
-											</div>
-											<div class="itemoffPrice">
-												<del>
-													<i>220,000</i>
-													원
-												</del>
-												<b>57% off</b>
-												<strong>
-													<i>95,000</i>원
-												</strong>
-												<div class="itemoffMeta">
-													<span>
-														남은자리
-														<i>58</i>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="itemPrecaut">

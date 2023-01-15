@@ -1,5 +1,9 @@
 @charset "UTF-8";
-
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+}
 /* adminitemlist */
 .adminitemEtc{
 	background-color: #E6F7FA;
@@ -166,24 +170,32 @@
 	box-shadow: 0 4px 8px rgb(0 0 0 / 10%), 0 6px 16px rgb(0 0 0 / 10%);
     border-radius: 10px;
     background-color: #fff;
-   	margin: 0 auto;
+   	margin: 10px auto 0;
    	padding: 40px 30px;
 }
 .itemWriteDetail select{
 	min-width: 15%;
 	padding: 10px;
 	border-color: #DEDEDE;
+	margin: 0 3px;
 }
 .adminitemwrite{
 	border-top:1px solid #bbb;
 	border-bottom:1px solid #bbb;
-	margin-bottom:40px;
+	margin:15px 0 40px;
 	width:100%;
+}
+.adminitemwrite tr td img{
+	width: 200px;
+}
+.adminitemhead{
+	width: 10%;
 }
 .adminitemwrite input[type="text"]{
 	height:30px;
 	padding:0 10px;
 	border:1px solid #DEDEDE;
+	margin-right: 5px;
 }
 .adminitemwrite input:focus{
     border-color:#000000;
@@ -194,7 +206,6 @@
     position: relative;
     display: inline-block;
     margin: -1px 5px 0 5px;
-    color: #cb0000;
     font-size: 14px;
     vertical-align: middle;
 }
@@ -216,38 +227,58 @@
 }
 .adminitemwrite th{
 	background-color:#EFEFEF;
-	width:200px;
+	width:10%;
 }
 .adminitemwrite td{
 	background-color:#fff;
+	width: 22%;
 }
 
 .adminitemwrite tr th,
 .adminitemwrite tr td{
 	padding: 15px 20px;
 }
-.boardIntile{
+.itemaddr{
+	width: 100%;
+}
+.iteminfo{
 	width: 70%;
 }
-.boardTextarea{
+.itemIntile{
+	width: 70%;
+}
+.itemGoal .ck.ck-editor__editable_inline>:last-child {
+    height: 200px;
+}
+.itemContents .ck.ck-editor__editable_inline>:last-child {
+    height: 350px;
+}
+.itemgoal{
 	width: 100%;
 	padding: 10px;
 	resize: vertical;
-	min-height: 400px;
+	min-height: 180px;
 	border-color: #DEDEDE; 
 }
-.boardWriteBtn{
+.itemcontents{
+	width: 100%;
+	padding: 10px;
+	resize: vertical;
+	min-height: 320px;
+	border-color: #DEDEDE; 
+}
+.itemWriteBtn{
 	text-align: center;
 }
-.boardWriteBtn input{
+.itemWriteBtn input{
 	background-color: #122233;
 	padding: 7px 20px;
 	color: #fff;
 	border-radius: 6px;
 	border: 0;
 }
-.boardWriteBtn input:first-child {
-	margin-right: 20px;
+.itemWriteBtn input{
+	margin: 0 10px;
 }
 
 

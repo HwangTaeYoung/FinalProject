@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* header */
 .header{
 	width: 100%;
@@ -925,7 +924,7 @@ footer{
 }
 .itemOnTomDi a{
 	display: block;
-	height: 40%;
+	height: 100%;
 }
 .itemMy{
 	height: 168px;
@@ -939,13 +938,14 @@ footer{
 	height: 407px;
 }
 .itemMym{
-	padding: 25px 15px;
+	padding: 15px;
 	overflow: hidden;
+	height: 239px;
 	width: 100%;
 }
 .itemMymCongal{
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 .itemCategory{
 	display: inline-block;
@@ -970,6 +970,10 @@ footer{
     letter-spacing: -0.3px;
     color: #123;
     margin: 7px 0 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .itemConGal{
 	margin-top: 20px;
@@ -1210,7 +1214,7 @@ footer{
 }
 .itemOffTomDi a{
 	display: block;
-	height: 40%;
+	height: 100%;
 }
 .itemoffMy{
 	height: 168px;
@@ -1218,14 +1222,15 @@ footer{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	border-bottom: 1px solid #ddd;
 }
 .itemoffMy .itemLocal{
 	background-color: #008D79;
 }
 .itemLocal{
 	position: absolute;
-	bottom: 20px;
-	left: 20px;
+	bottom: 15px;
+	left: 15px;
 	padding: 6px 10px;
 	background: #3367CD;
 	border-radius: 3px;
@@ -1233,8 +1238,9 @@ footer{
 	color: #fff;
 }
 .itemoffMym{
-	padding: 25px 15px;
+	padding: 15px;
 	overflow: hidden;
+	height: 239px;
 }
 .itemoffMym .itemoffCategory{
 	display: inline-block;
@@ -1245,25 +1251,40 @@ footer{
     background: #fff;
     padding: 4px 6px;
     border-radius: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+.itemoffMym .itemoffCate{
+	display: block;
+    font-size: 15px;
+    font-weight: 800;
+    background: #fff;
+    padding: 3px 0;
+    margin-bottom: 10px;
+    border-bottom:1px solid #ddd;
+    width: 23%; 
 }
 .itemoffMym .itemoffPeriod{
 	font-size: 14px;
     font-weight: 600;
     color: #123;
-    display: block;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.itemoffMym .itemoffStr{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
 }
 .itemoffMym strong{
-    font-size: 18px;
+	font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.3px;
     color: #123;
-    margin: 7px 0 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .itemoffSelt{
-	margin-top: 25px;
+	margin-top: 20px;
 	overflow: hidden;
 }
 .itemoffCo{
@@ -1309,6 +1330,7 @@ footer{
 .itemoffPrice strong{
 	display: block;
 	font-size: 16px;
+	margin: 7px 0 5px;
 }
 .itemoffPrice i{
 	font-style: normal;
@@ -1512,11 +1534,12 @@ footer{
 .itemOnViewProBottomKg{
 	position: absolute;
 	bottom: 17px;
-    left: 15px;
+    left: 10px;
 	font-size: 20px;
 	background: #fff;
 	width: 85px;
 	padding: 3px;
+	text-align: center;
 }
 .itemOnViewProfirst{
 	margin-bottom: 50px;
@@ -1991,6 +2014,9 @@ footer{
     border-bottom: 1px solid #ddd;
     padding-bottom: 25px;
 }
+.itemOffViewPr3{
+	margin: 20px 0;
+}
 .itemOffViewProBottomimg{
 	position: relative;
 	margin: 35px 0 25px;
@@ -2016,29 +2042,16 @@ footer{
 .itemOffviewProgInfo{
 	width: 85%;
 }
-.itemOffViewYoga p{
-	color: #123;
-    font-size: 16px;
-    line-height: 1.8;
-    margin: 25px 0 50px;
-    font-weight: 400;
-    border: 0;
-    padding: 0;
+.itemOffViewGoal{
+	margin: 50px 0;
 }
-.itemOffViewGoal p{
+.itemOffViewGoalP{
 	font-size: 24px;
     color: #111;
     font-weight: bold;
     border-bottom: 1px solid #ddd;
     padding-bottom: 25px;
     border: 0;
-}
-.itemOffViewGoal div ul li{
-	color: #123;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-left: 20px;
-    list-style: disc;
 }
 .itemOffviewProg{
 	margin: 50px 0;
@@ -2055,19 +2068,8 @@ footer{
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 }
-.itemOffviewProg p{
-	color: #123;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-}
 .itemOffviewProg div{
-	color: #123;
-    font-size: 16px;
-    line-height: 1.8;
-}
-.itemOffviewLastP{
-	margin: 25px 0;
+    line-height: 1.6;
 }
 
 
@@ -2449,11 +2451,14 @@ footer{
 	width: 70%;
 }
 .boardTextarea{
-	width: 100%;
+	width: 100% ;
 	padding: 10px;
 	resize: vertical;
-	min-height: 400px;
+	height: 400px;
 	border-color: #DEDEDE; 
+}
+.ck.ck-editor__editable_inline>:last-child {
+    height: 400px;
 }
 .boardWriteBtn{
 	text-align: center;
