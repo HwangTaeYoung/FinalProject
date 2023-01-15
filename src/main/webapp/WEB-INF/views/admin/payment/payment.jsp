@@ -17,6 +17,24 @@
 					<div class="adminMemberTopTitle">
 						<h1>결제관리</h1>
 					</div>
+					<table class="adminMemberSearchMain">
+						<tr>
+							<th rowspan="2">검색어</th>
+							<td>
+								<select name="category">
+									<option value="선택하세요">선택하세요</option>
+									<option value="아이디">아이디</option>
+									<option value="이름">이름</option>
+									<option value="결제방식">결제방식</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" placeholder="Search...">
+							</td>
+						</tr>
+					</table>
 					<div class="adminpaymentTab">
 						<div class="paymentTabLeft">
 							<a href="#">결제요청</a>
