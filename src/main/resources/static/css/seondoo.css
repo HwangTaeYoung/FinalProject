@@ -2316,13 +2316,71 @@ footer{
 	background-color: #ede8f7;
 	color: #8e42b9;
 }
+
 .boardList{
 	width: 100%;
 	background-color: #f2f2f2;
 	padding: 150px 0;
+	position: relative;
+}
+.boardLayerPopupBg{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	z-index: 40;
+	display: none;
+}
+.boardLayerPopup{
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	z-index: 50;
+	padding: 30px 0;
+	display: none;
+}
+.boardLayerPopupFlex{
+	display: flex;
+	align-items: center;
+}
+.boardPwd{
+	margin: 0 auto;
+}
+.boardLayerTitle{
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.boardPwd p{
+	margin-bottom: 10px;
+}
+.boardLayerBtn{
+	margin: 10px 0;
+}
+.boardLayerBtn input{
+	background-color: #122233;
+	padding: 4px 8px;
+	color: #fff;
+	border-radius: 6px;
+	border: 0;
+}
+.boardLayerBtn input:nth-child(1){
+	margin-right: 10px;
+}
+.boardLayerInPwd{
+	height: 30px;
+	padding: 0 10px;
+	border: 1px solid #DEDEDE;
+	margin-bottom: 5px;
 }
 .boardTopTitle{
 	margin-bottom: 25px;
+	
 }
 .boardListTable{
 	width: 100%;
@@ -2346,10 +2404,10 @@ footer{
 }
 .boardListTable table tr th:nth-child(1),
 .boardListTable table tr td:nth-child(1){
-	width: 5%;
+	width: 3%;
 }
 .boardListTable table tr th:nth-child(2){
-	width: 13%;
+	width: 15%;
 }
 .boardListTable table tr th:nth-child(3),
 .boardListTable table tr td:nth-child(3){
@@ -2357,10 +2415,14 @@ footer{
 }
 .boardListTable table tr th:nth-child(4),
 .boardListTable table tr td:nth-child(4){
-	width: 10%;
+	width: 13%;
 }
 .boardListTable table tr th:nth-child(5),
 .boardListTable table tr td:nth-child(5){
+	width: 15%;
+}
+.boardListTable table tr th:nth-child(6),
+.boardListTable table tr td:nth-child(6){
 	width: 10%;
 }
 .boardListTable table tr th,
@@ -2421,11 +2483,44 @@ footer{
 
 
 /* boardwrite */
-
+.boardTitle{
+	margin-bottom: 50px;
+}
+.boardTable{
+	border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.boardTable input[type="text"]{
+	height:30px;
+	padding:0 10px;
+	border:1px solid #DEDEDE;
+}
+.boardTable tr{
+	border-bottom:1px solid #DEDEDE;
+}
+.boardTable tr th,
+.boardTable tr td{
+	text-align:left;
+	padding : 10px 20px;
+}
+.boardTable th{
+	background-color:#EFEFEF;
+	width:200px;
+}
+.boardTable td{
+	background-color:#fff;
+}
 .boardWrite{
 	width: 100%;
 	background-color: #f2f2f2;
 	padding: 150px 0;
+}
+.boardWrite span{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
 }
 .boardWriteDetail{
 	width: 70%;
@@ -2446,6 +2541,9 @@ footer{
 .boardWriteDetail table tr th,
 .boardWriteDetail table tr td{
 	padding: 15px 20px;
+}
+.boardInPwd{
+	width: 30%;
 }
 .boardIntile{
 	width: 70%;
@@ -2470,20 +2568,17 @@ footer{
 	border-radius: 6px;
 	border: 0;
 }
-.boardWriteBtn input:first-child {
+.boardWriteBtn input{
 	margin-right: 20px;
 }
 
 
 /* boardview */
-.boardViewsub{
-	height: 150px;
+.boardViewsub img{
+	width: 200px;
 }
-.boardViewsub p{
-	height: 100%;
-}
-.boardViewDetail .boardWriteBtn input:nth-child(2) {
-	margin-right: 20px;
+.boardViewDetail .boardWriteBtn input{
+	margin: 0 10px;
 }
 .boardViewLink{
 	background-color: #ddd;

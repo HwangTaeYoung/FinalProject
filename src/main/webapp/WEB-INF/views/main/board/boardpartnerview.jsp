@@ -23,7 +23,7 @@
 					<h2>함께 헬싱!</h2>
 				</div>
 				<div class="memberjoinTitle">
-					<h3>1:1문의 상세보기</h3>
+					<h3>파트너신청 상세보기</h3>
 				</div>
 				<table class="boardTable">
 					<tr>
@@ -60,9 +60,9 @@
 					</tr>
 				</table>
 				<div class="boardWriteBtn">
-					<input type="button" value="수정" onclick="location.href='/boardupdate/${view.bno}'">
-					<input type="button" value="삭제" onclick="location.href='/boarddelete/${view.bno}'">
-					<input type="button" onclick="location.href='/boardlist'" value="목록">
+					<input type="button" value="수정" onclick="location.href='/boardpartnerupdate/${view.bno}'">
+					<input type="button" value="삭제" onclick="location.href='/boardpartnerdelete/${view.bno}'">
+					<input type="button" onclick="location.href='/boardpartner'" value="목록">
 				</div>	
 			</div>
 		</div>

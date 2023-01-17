@@ -5,7 +5,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>1:1문의 남기기</title>
+	<title>1:1문의 수정</title>
 	<%@ include file="../include/head.jsp" %>
 </head>
 <body>
@@ -23,36 +23,39 @@
 					<h2>함께 헬싱!</h2>
 				</div>
 				<div class="memberjoinTitle">
-					<h3>1:1문의 남기기</h3>
+					<h3>1:1문의 수정</h3>
 				</div>
-				<form action="/boardquestioninsert" method="post" enctype="multipart/form-data">
+				<form action="/boardupdateProc" method="post" enctype="multipart/form-data">
 					<table class="memberjoinTable">
 						<tr>
 							<th>카테고리</th>
 							<td>
-								<select name="bcategory">
-									<option value="온라인이용권">온라인이용권</option>
-									<option value="오프라인이용권">오프라인이용권</option>
-									<option value="설문">설문</option>
+								<select name="bcategory" ${up.bcategory}>
+									<option value="온라인이용권" <c:if test ="${up.bcategory eq '온라인이용권'}">selected="selected"</c:if>>온라인이용권</option>
+									<option value="오프라인이용권" <c:if test ="${up.bcategory eq '오프라인이용권'}">selected="selected"</c:if>>오프라인이용권</option>
+									<option value="설문" <c:if test ="${up.bcategory eq '설문'}">selected="selected"</c:if>>설문</option>
 								</select>
 							</td>
 						</tr>
 						<tr>
-							<th>작성자ID</th>
-							<td>${id}</td>
-						</tr>
-						<tr>
-							<th>비밀번호</th>
-							<td><input type="password" class="boardInPwd" name="bpwd" required></td>
+							<th>작성자</th>
+							<td>${up.bwriter}</td>
 						</tr>
 						<tr>
 							<th>제목</th>
-							<td><input type="text" class="boardIntile" name="btitle" required></td>
+							<td><input type="text" class="boardIntile" name="btitle" value="${up.btitle}"></td>
 						</tr>
 						<tr>
 							<th>내용</th>
 							<td>
-								<textarea class="boardTextarea" name="bcontents" id="bcontents" style="width: 100%;"></textarea>
+								<textarea class="boardTextarea" name="bcontents" id="bcontents" style="width: 100%;">${up.bcontents}</textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>기존파일</th>
+							<td class="boardViewsub">
+								<img src="${up.bfile}">
+								<input type="hidden" name="boarqdimg" value="${up.bfile}">
 							</td>
 						</tr>
 						<tr>
@@ -62,7 +65,9 @@
 					</table>
 					<div class="boardWriteBtn">
 						<input type="submit" value="저장" id="savebutton">
-						<input type="button" value="취소" onclick="location.href='/boardlist'">
+						<input type="button" value="취소" onclick="location.href='/boardview/${up.bno}'">
+						<input type="button" value="글쓰기" onclick="location.href='/boardwrite'">
+						<input type="hidden" name="bno" value="${bno}"/>
 					</div>	
 				</form>
 			</div>

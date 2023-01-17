@@ -23,27 +23,13 @@
 					<h2>함께 헬싱!</h2>
 				</div>
 				<div class="memberjoinTitle">
-					<h3>1:1문의 남기기</h3>
+					<h3>공지사항 남기기</h3>
 				</div>
-				<form action="/boardquestioninsert" method="post" enctype="multipart/form-data">
+				<form action="/boardnoticeinsert" method="post" enctype="multipart/form-data">
 					<table class="memberjoinTable">
-						<tr>
-							<th>카테고리</th>
-							<td>
-								<select name="bcategory">
-									<option value="온라인이용권">온라인이용권</option>
-									<option value="오프라인이용권">오프라인이용권</option>
-									<option value="설문">설문</option>
-								</select>
-							</td>
-						</tr>
 						<tr>
 							<th>작성자ID</th>
 							<td>${id}</td>
-						</tr>
-						<tr>
-							<th>비밀번호</th>
-							<td><input type="password" class="boardInPwd" name="bpwd" required></td>
 						</tr>
 						<tr>
 							<th>제목</th>
@@ -62,7 +48,7 @@
 					</table>
 					<div class="boardWriteBtn">
 						<input type="submit" value="저장" id="savebutton">
-						<input type="button" value="취소" onclick="location.href='/boardlist'">
+						<input type="button" value="취소" onclick="location.href='/boardnotice'">
 					</div>	
 				</form>
 			</div>
