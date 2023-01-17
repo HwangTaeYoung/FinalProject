@@ -1,8 +1,5 @@
 package com.example.demo.controller;
 
-import java.io.PrintStream;
-import java.util.Random;
-
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
