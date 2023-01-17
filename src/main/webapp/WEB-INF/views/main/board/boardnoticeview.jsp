@@ -23,13 +23,9 @@
 					<h2>함께 헬싱!</h2>
 				</div>
 				<div class="memberjoinTitle">
-					<h3>1:1문의 상세보기</h3>
+					<h3>공지사항 상세보기</h3>
 				</div>
 				<table class="boardTable">
-					<tr>
-						<th>카테고리</th>
-						<td>${view.bcategory}</td>
-					</tr>
 					<tr>
 						<th>작성자ID</th>
 						<td>${view.bwriter}</td>
@@ -60,9 +56,9 @@
 					</tr>
 				</table>
 				<div class="boardWriteBtn">
-					<input type="button" value="수정" onclick="location.href='/boardupdate/${view.bno}'">
-					<input type="button" value="삭제" onclick="location.href='/boarddelete/${view.bno}'">
-					<input type="button" onclick="location.href='/boardlist'" value="목록">
+					<input type="button" value="수정" onclick="location.href='/boardnoticeupdate/${view.bno}'">
+					<input type="button" value="삭제" onclick="location.href='/boardnoticedelete/${view.bno}'">
+					<input type="button" onclick="location.href='/boardnotice'" value="목록">
 				</div>	
 			</div>
 		</div>
