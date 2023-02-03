@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.mapper.PaymentMapper">
+	<select id="PaymentDetail" parameterType="String" resultType="com.example.demo.domain.memberVO">
+		select * from member where uid = #{sessionId}
+	</select>
+<!-- 	<select id="PayStatus" parameterType="com.example.demo.domain.memberVO" resultType="com.example.demo.domain.memberVO">
+		select * from member where ucm = #{ucm} AND ukg = #{ukg}
+	</select>
+	<select id="PayItem" resultType="com.example.demo.domain.ItemVO" parameterType="String">
+        select * from itemonline where itarget = #{bmiresult} AND istatus IS NOT NULL
+    </select> -->
+	
+</mapper>

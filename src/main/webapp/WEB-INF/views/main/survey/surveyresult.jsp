@@ -23,7 +23,7 @@
 						<h4>진단 결과</h4>
 						<div class="resultTitleDetail">
 							<p>당신은</p>
-							<p><strong>고도비만</strong>입니다.</p>
+							<p><strong>${bmiSet.bmiResult}</strong>입니다.</p>
 						</div>
 						<div class="surveyMent">
 							<p>평균적으로 <strong>${result.ssleep}</strong> 수면하시고, 평소 식사는 <strong>${result.smeal}</strong>이시고,</p>

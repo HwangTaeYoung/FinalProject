@@ -1,9 +1,15 @@
 package com.example.demo.service;
 
+import java.util.HashMap;
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.domain.BoardVO;
+import com.example.demo.domain.ItemVO;
+import com.example.demo.domain.SurveyVO;
 import com.example.demo.domain.memberVO;
 import com.example.demo.mapper.UserMapper;
 
@@ -37,4 +43,17 @@ public class UserService {
 
 		return mUserMapper.umypageView(sessionId);
 	}
+	public memberVO mypageService(memberVO mmemberVO) throws Exception{
+
+		return mUserMapper.umypage(mmemberVO);
+	}
+	public memberVO memberUpdateService(int uno) throws Exception{
+
+		return mUserMapper.memberUpdate(uno);
+	}
+	public List<ItemVO> mypageListService(String bmiresult) throws Exception{
+		
+		return mUserMapper.mypageList(bmiresult);
+	}
+	
 }

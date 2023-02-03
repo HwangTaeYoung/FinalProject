@@ -26,16 +26,10 @@
 					<div class="loginPwd">
 						<input type="password" class="loginValue" name="upwd" id="user_pw" placeholder="패스워드를 입력하세요">
 					</div>
-					<div class="loginCheck">
-						<label><input type="checkbox" id="loginCheckbox" value="login">로그인 기억하기</label>
-					</div>
 					<div class="loginButton">
 						<input type="submit" id="loginBtn" class="loginBtn" value="로그인">
 					</div>	
 				</form>
-				<div class="loginAtag">
-					<a href="/loginfind">아이디/비밀번호를 잊으셨나요?</a>
-				</div>
 			</div>	
 		</div>
 		<div class="loginDetailright"></div>

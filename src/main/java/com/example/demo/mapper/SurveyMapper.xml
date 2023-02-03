@@ -16,4 +16,22 @@
 	<select id="surveySession" parameterType="int" resultType="com.example.demo.domain.SurveyVO">
         SELECT * FROM survey WHERE uno = #{sessionuno} order by sno desc limit 1
 	</select>
+	<select id="surveyHeathlist" resultType="com.example.demo.domain.ItemVO" parameterType="com.example.demo.domain.ItemVO">
+        SELECT
+            *
+        FROM itemonline
+        WHERE ipurpose = "다이어트" AND istatus IS NOT NULL LIMIT 4
+    </select>
+    <select id="surveyMusclelist" resultType="com.example.demo.domain.ItemVO" parameterType="com.example.demo.domain.ItemVO">
+        SELECT
+            *
+        FROM itemonline
+        WHERE ipurpose = "근력강화" AND istatus IS NOT NULL LIMIT 4
+    </select>
+    <select id="surveyBodytypelist" resultType="com.example.demo.domain.ItemVO" parameterType="com.example.demo.domain.ItemVO">
+        SELECT
+            *
+        FROM itemonline
+        WHERE ipurpose = "체형교정" AND istatus IS NOT NULL LIMIT 4
+    </select>
 </mapper>

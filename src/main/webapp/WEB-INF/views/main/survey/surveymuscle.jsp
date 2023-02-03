@@ -13,7 +13,7 @@
 	<!-- header include -->
 	<%@ include file="../include/header.jsp" %>
 	<!-- header include End -->
-<form action="/surveyallview" method="post">
+<form action="/surveymuscle" method="post">
 	<div class="surveyAllView">
 		<div class="container">
 			<div class="surveyAllContens">
@@ -22,7 +22,7 @@
 						<h4>헬싱플러스</h4>
 						<div class="surveyAllPi">
 							<p>헬싱<sup>+</sup></p>
-							<p>다이어트</p>
+							<p>근력강화</p>
 						</div>
 					</div>
 					<div class="itemViewProgram surveyAllTitle">
@@ -30,49 +30,49 @@
 						<div class="surveyAllList">
 							<!-- for문 시작점 -->
 							<c:forEach var="list" items="${list}" varStatus="status" >
-								<div class="itemOnTomMiSu">
-									<div class="itemOnTomDi">
-										<a href="/itemonlineview/${list.ino}">
-											<div class="itemMy" style="background-image: url('${list.ithumbnail}')">
-												<div class="itemLocal">온라인 이용권</div>
-											</div>
-											<div class="itemMym">
-												<div class="itemMymCongal">
-													<p class="itemCategory">${list.icategory}</p>
-													<p class="itemPeriod">주${list.iweek} / 주${list.iweekcount}회 / ${list.iweektime}분</p>
-													<div>
-														<strong>${list.ititle}</strong>
-													</div>
-												</div>
-												<div class="itemConGal">
-													<div class="itemCo">
-														<img class="itemImg" src="${list.icoachimg}">
-														<p>${list.icoachname}</p>
-													</div>
-													<div class="itemPrice">
-														<del>
-															<i><fmt:formatNumber type="number" value="${list.iprice}"/></i>
-															원
-														</del>
-														<b>${list.isale}% off</b>
-														<strong>
-															<i>
-																<c:set var="price" value="${list.iprice-((list.isale/100)*list.iprice)}"/>
-																<fmt:formatNumber type="number" value="${price+(1-(price%1))%1}"/>
-															</i>원
-														</strong>
-														<div class="itemMeta">
-															<span>
-																남은자리
-																<i>${list.ipeople}</i>
-															</span>
-														</div>
-													</div>
+							<div class="itemOnTomMiSu">
+								<div class="itemOnTomDi">
+									<a href="/itemonlineview/${list.ino}">
+										<div class="itemMy" style="background-image: url('${list.ithumbnail}')">
+											<div class="itemLocal">온라인 이용권</div>
+										</div>
+										<div class="itemMym">
+											<div class="itemMymCongal">
+												<p class="itemCategory">${list.icategory}</p>
+												<p class="itemPeriod">주${list.iweek} / 주${list.iweekcount}회 / ${list.iweektime}분</p>
+												<div>
+													<strong>${list.ititle}</strong>
 												</div>
 											</div>
-										</a>
-									</div>
+											<div class="itemConGal">
+												<div class="itemCo">
+													<img class="itemImg" src="${list.icoachimg}">
+													<p>${list.icoachname}</p>
+												</div>
+												<div class="itemPrice">
+													<del>
+														<i><fmt:formatNumber type="number" value="${list.iprice}"/></i>
+														원
+													</del>
+													<b>${list.isale}% off</b>
+													<strong>
+														<i>
+															<c:set var="price" value="${list.iprice-((list.isale/100)*list.iprice)}"/>
+															<fmt:formatNumber type="number" value="${price+(1-(price%1))%1}"/>
+														</i>원
+													</strong>
+													<div class="itemMeta">
+														<span>
+															남은자리
+															<i>${list.ipeople}</i>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
 								</div>
+							</div>
 							</c:forEach>
 							<!-- for문 끝나는점 -->
 						</div>	
@@ -95,7 +95,7 @@
 					<div class="surveyAllSidebar">
 						<div class="surveyAllSideBox">
 							<p><span class="itemViewSiedTag"><i class="xi-box"></i> 유형</span><span class="itemViewSidepic">헬싱플러스</span></p>
-							<p><span class="itemViewSiedTag"><i class="xi-my-location"></i> 목적</span><span class="itemViewSidepic">다이어트</span></p>
+							<p><span class="itemViewSiedTag"><i class="xi-my-location"></i> 목적</span><span class="itemViewSidepic">근력강화</span></p>
 						</div>
 						<div class="surveyAllSideBox">
 							<div class="surveyAlldiv">진단 설문 후 프로그램이 추천됩니다.</div>

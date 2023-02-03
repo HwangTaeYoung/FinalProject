@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>    
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +24,7 @@
 			<div class="mypageFlexLeft">
 				<div class="mypageProfileDetail">
 					<h4>프로필</h4>
-					<a href="#" class="mypageMyProfile">
+					<a href="/memberupdate/${member.uno}" class="mypageMyProfile">
 						<span class="mypageName">${member.uname}
 						<c:choose>
 							<c:when test="${member.ugender=='man'}">
@@ -37,26 +38,37 @@
 						<span>${member.ubirth}</span>
 						<span>${member.ucm}cm / ${member.ukg}kg</span>
 						<span class="mypageImage"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-					</a>	
+					</a>
 				</div>
-				<div class="mypageProfileDetail">
-					<h4>결제내역</h4>
-					<table class="mypageTable">
-						<tr class="mypageTableTitle">
-							<th>결제아이템</th>
-							<th>결제금액</th>
-							<th>결제일</th>
-							<th>남은일수</th>
-						</tr>
-						<tr>
-							<td>다이어트는 요가와 함께</td>
-							<td>20,000원</td>
-							<td>2023.01.01</td>
-							<td>
-								<span class="boardEtc">5일</span>
-							</td>
-						</tr>
-					</table>
+				<div class="mypageHealthing">
+					<h4>헬싱+</h4>
+					<div class="itemOnViewProBottom itemViewProgram mypageProgram">
+						<div class="itemOnViewProBottomimg">
+							<img src="/image/seondooimage/viman.svg">
+							<div class="itemOnViewProBottomKg">${bmiSet.bmiResult}</div>
+						</div>
+						<h3 class="itemOnViewProfirst">🙋‍♀️🙋🏻‍♂️<b>${bmiSet.bmiResult}</b>이 할 수 있는 프로그램입니다.</h3>
+						<h3>
+							<span>헬싱이 알려드려요!</span>
+							<span>
+								<b>${bmiSet.bmiResult}</b>은?
+							</span>
+						</h3>
+						<div class="itemOnViewYoga mypageYoga">
+							<p>
+								${bmiSet.health}
+							</p>
+							<h3>
+								<span>
+									<b>${bmiSet.bmiResult}</b>을 위한
+								</span>
+								<span>추천 식단!</span>
+							</h3>
+							<p>
+								${bmiSet.food}
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="mypageFlexRight">
@@ -65,7 +77,7 @@
 					<a href="#">
 						<span class="mypageBasicTitle">성별</span>
 						<span class="mypageRightImg"><img src="image/taeyoungimage/ic_chev_right.svg"></span>
-						<in class="mypageRightInfo"><strong>${member.ugender}</strong></span>
+						<span class="mypageRightInfo"><strong>${member.ugender}</strong></span>
 					</a>
 					<a href="#">
 						<span class="mypageBasicTitle">생년월일</span>
@@ -85,38 +97,47 @@
 				</div>
 				<div class="mypageItem">
 					<h4>추천 아이템</h4>
+					<!-- for문 시작점 -->
+					<c:if test="${empty list}">
+					비었음
+					</c:if>
+					<c:if test="${not empty list}">
+					<c:forEach var="list" items="${list}" varStatus="status" >
 					<div class="itemOnTomMiSu">
 						<div class="itemOnTomDi">
-							<a href="/itemonlineview">
-								<div class="itemMy" style="background-image: url('/image/seondooimage/indexlogo.png')">
+							<a href="/itemonlineview/${list.ino}">
+								<div class="itemMy" style="background-image: url('${list.ithumbnail}')">
 									<div class="itemLocal">온라인 이용권</div>
 								</div>
 								<div class="itemMym">
 									<div class="itemMymCongal">
-										<p class="itemCategory">홈 트레이닝, 맨몸운동</p>
-										<p class="itemPeriod">5주 / 주2회 / 15분</p>
+										<p class="itemCategory">${list.icategory}</p>
+										<p class="itemPeriod">주${list.iweek} / 주${list.iweekcount}회 / ${list.iweektime}분</p>
 										<div>
-											<strong>태권도 발차기로 키가 쑥쑥!</strong>
+											<strong>${list.ititle}</strong>
 										</div>
 									</div>
 									<div class="itemConGal">
 										<div class="itemCo">
-											<img class="itemImg" src="/image/seondooimage/indexlogo.png">
-											<p>김코치</p>
+											<img class="itemImg" src="${list.icoachimg}">
+											<p>${list.icoachname}</p>
 										</div>
 										<div class="itemPrice">
 											<del>
-												<i>220,000</i>
+												<i><fmt:formatNumber type="number" value="${list.iprice}"/></i>
 												원
 											</del>
-											<b>57% off</b>
+											<b>${list.isale}% off</b>
 											<strong>
-												<i>95,000</i>원
+												<i>
+													<c:set var="price" value="${list.iprice-((list.isale/100)*list.iprice)}"/>
+													<fmt:formatNumber type="number" value="${price+(1-(price%1))%1}"/>
+												</i>원
 											</strong>
 											<div class="itemMeta">
 												<span>
 													남은자리
-													<i>58</i>
+													<i>${list.ipeople}</i>
 												</span>
 											</div>
 										</div>
@@ -125,33 +146,9 @@
 							</a>
 						</div>
 					</div>
-				</div>
-				<div class="mypageHealthing">
-					<h4>헬싱+</h4>
-					<div class="itemOnViewProBottom itemViewProgram mypageProgram">
-						<div class="itemOnViewProBottomimg">
-							<img src="/image/seondooimage/viman.svg">
-							<div class="itemOnViewProBottomKg">고도비만</div>
-						</div>
-						<h3 class="itemOnViewProfirst">🙋‍♀️🙋🏻‍♂️<b>고도비만</b>이 할 수 있는 프로그램입니다.</h3>
-						<h3>
-							<span>헬싱이 알려드려요!</span>
-							<span>고도비만은?</span>
-						</h3>
-						<div class="itemOnViewYoga mypageYoga">
-							<p>
-								고도비만에 대해서 운동법 json방식으로 적기
-							</p>
-							<h3>
-								<span>고도비만을 위한</span>
-								<span>추천 식단!</span>
-							</h3>
-							<p>
-								고도비만에 대해서 좋은 식단 json방식으로 적기
-								<b>앞에 아이콘 뒤에 식단명</b>
-							</p>
-						</div>
-					</div>
+					</c:forEach>
+					</c:if>
+					<!-- for문 끝나는점 -->
 				</div>
 			</div>
 		</div>

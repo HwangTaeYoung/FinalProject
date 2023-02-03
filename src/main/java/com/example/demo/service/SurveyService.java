@@ -1,9 +1,12 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import com.example.demo.domain.ItemVO;
 import com.example.demo.domain.SurveyVO;
 import com.example.demo.domain.memberVO;
 import com.example.demo.mapper.SurveyMapper;
@@ -29,5 +32,20 @@ public class SurveyService {
 	public SurveyVO surveySessionService(int sessionuno) throws Exception{
 
 		return mSurveyMapper.surveySession(sessionuno);
+	}
+	//헬싱 다이어트
+	public List<ItemVO> surveyHeathService() throws Exception{
+		
+		return mSurveyMapper.surveyHeathlist();
+	}
+	//헬싱 근력강화
+	public List<ItemVO> surveyMuscleService() throws Exception{
+		
+		return mSurveyMapper.surveyMusclelist();
+	}
+	//헬싱 체형교정
+	public List<ItemVO> surveyBodytypeService() throws Exception{
+		
+		return mSurveyMapper.surveyBodytypelist();
 	}
 }

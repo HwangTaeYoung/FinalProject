@@ -20,7 +20,7 @@
 				<h4>프로그램 구성</h4>
 				<div class="surveyBtn">
 					<div class="surveyDetailOne">
-						<a class="surveyBtnDetail" href="/surveywrite">
+						<a class="surveyBtnDetail" id="loginChk" href="javascript:;">
 							<span>헬싱</span>
 							<span>플러스</span>
 							<h5>진단 설문하기</h5>
@@ -40,7 +40,7 @@
 						</a>
 					</div>
 					<div class="surveyDetailThree">
-						<a class="surveyBtnDetail" href="/surveyallview">
+						<a class="surveyBtnDetail" href="/surveymuscle">
 							<span class="surveyItemTag">헬싱<sup>+</sup></span>
 							<img class="surveyItemImg" src="/image/taeyoungimage/ic_select_biceps.svg">
 							<strong>근력강화</strong>
@@ -53,7 +53,7 @@
 						</a>
 					</div>
 					<div class="surveyDetailFour">
-						<a class="surveyBtnDetail" href="/surveyallview">
+						<a class="surveyBtnDetail" href="/surveybodytype">
 							<span class="surveyItemTag">헬싱<sup>+</sup></span>
 							<img class="surveyItemImg" src="/image/taeyoungimage/ic_select_revision.svg">
 							<strong>체형교정</strong>
@@ -224,5 +224,18 @@
 	</div>				
 </div>
 <%@ include file="../include/footer.jsp" %>
+<script>
+$("#loginChk").click(function(){
+	var idChk = "${id}";
+	if(idChk!=""){
+		console.log("ok");
+		location.href="/surveywrite";
+	}else{
+		console.log("no");
+		alert("로그인 해주세요");
+		location.href="/login";
+	}
+});
+</script>
 </body>
 </html>
